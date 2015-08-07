@@ -1,0 +1,66 @@
+# ------------------------------------------------------
+# URL Friendly
+# ------------------------------------------------------
+
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} -f [OR]
+RewriteCond %{SCRIPT_FILENAME} -d
+
+######## Skip the next `n` rules ########
+
+RewriteRule . - [S=1]
+
+
+######## Rules ########
+
+# RewriteRule ^$ index.php
+
+
+
+# ------------------------------------------------------
+# GZIP Compression
+# ------------------------------------------------------
+
+<IfModule mod_deflate.c>
+
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+
+</IfModule>
+
+
+# ------------------------------------------------------
+# Optimize Requests
+# ------------------------------------------------------
+
+<IfModule mod_expires.c>
+  
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+
+  ExpiresByType image/gif "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/ico "access plus 1 month"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/x-javascript "access plus 1 month"
+  
+</IfModule>
+
+
+# ------------------------------------------------------
+# Security
+# ------------------------------------------------------
+
+Options -Indexes
+
+
+
+# ------------------------------------------------------
+# Error Pages
+# ------------------------------------------------------
+
+ErrorDocument 403 403.html
+ErrorDocument 404 404.html
