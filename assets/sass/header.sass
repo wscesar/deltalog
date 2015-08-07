@@ -1,2 +1,53 @@
-body
-	background: red
+header
+	background: url(../img/banner.png) center top no-repeat
+	color: #fff
+	height: 483px
+
+	h1
+		font-size: 33.33px
+		font-weight: 300
+		text-align: center
+
+nav
+	color: #fff
+	text-align: center
+
+	a
+		background: #3f454d
+		display: block
+		float: left
+		height: 100px
+		width: calc(100%/5)
+		+transition(background 0.5s)
+		font-size: 12px
+		border-left: solid 1px #545961
+
+		&:first-child
+			border-left: 0
+
+		&:hover
+			border-bottom: solid 1px #96ca2d
+			background: #19a8f9
+			color: #000
+
+		span
+			display: block
+			+transform(translateY(-50%))
+			top: 50%
+
+
+section
+	h2
+		font-size: 44.78px
+		text-align: center
+
+		span
+			display: block
+			clear: both
+
+			b
+				font-weight: bold
+
+			sup
+				vertical-align: super
+				font-size: smaller
