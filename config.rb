@@ -1,9 +1,8 @@
 http_path = ""
 css_dir = "assets/css"
 sass_dir = "assets/sass"
-haml_dir = "assets/haml"
 jade_dir = "assets/jade"
-html_dir = "pages/html"
+html_dir = "pages/"
 images_dir = "assets/img"
 javascripts_dir = "assets/js"
 output_style = :compressed
