@@ -1,0 +1,35 @@
+<?php include 'inc/controller.php'; ?>
+
+doctype html
+
+html(lang="pt-BR")
+	head
+		meta(charset="UTF-8")
+
+		meta(name="viewport", content="width=1280")
+
+		//- base link
+		base(href="http://localhost/deltalog/")
+
+		//- analytics
+		script(src="assets/js/vendor/analytics.js")
+		
+		//- favicon
+		link(rel="icon", href="assets/img/favicon.ico")
+
+		//- css
+		link(rel="stylesheet", href="assets/css/main.css")
+
+		<!--[if lt IE 9]>
+		script(src="assets/js/vendor/html5.js")
+		<![endif]-->
+
+	body
+		
+		<?php require 'pages/home.php'; ?>
+
+		//- Js
+		script(src="assets/js/vendor/jquery.js")
+		script(src="assets/js/lib/app.js")
+
+
