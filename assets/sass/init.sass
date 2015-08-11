@@ -1,4 +1,12 @@
-@import "compass/css3"
+@import "compass/utilities/sprites"
+@import "../img/icons/*.png"
+@include all-icons-sprites
+
+$light-blue: #1cb3e2
+$dark-blue: #19a8f9
+$green: #96ca2d
+$bg-gray: #282828
+$bg-blue: #00587c
 
 *
     border: 0
@@ -10,24 +18,47 @@
     position: relative
     text-decoration: none
 
+html, body
+    font-family: 'open sans'
+    font-size: 14px
+    height: 100%
+    width: 100%
+
+h1, h2
+    font-weight: 300
+
 a
     color: inherit
+    cursor: pointer
 
 img
     display: block
 
-
-html, body
-    font-family: 'open sans'
-    height: 100%
+header, section, footer, nav
+    display: block
+    float: left
     width: 100%
 
-    header, section, footer, nav
-        float: left
-        width: 100%
-        display: block
+.bold, b
+    font-weight: 700
 
-    .wrap
-        height: 100%
-        margin: 0 auto
-        width: 1054px
+.light
+    font-weight: 300
+
+.br
+    clear: both
+    display: block
+
+.wrap
+    height: 100%
+    margin: 0 auto
+    width: 1054px
+
+.v-centered
+    display: block
+    top: 50%
+    +transform(translateY(-50%))
+
+sup
+    vertical-align: super
+    font-size: smaller

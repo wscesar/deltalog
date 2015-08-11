@@ -76,6 +76,63 @@
     <p>Mobilidade, a rua principal do condomínio foi planejada para facilitar a manobra de carga e descarga por caminhões.</p>
   </div>
 </section>
-<section id="lotes">
-  <h2> <span class="alto">32</span><span class="alto"><span>LOTES </span><span>PLANOS</span></span></h2>
+<section id="allotments">
+  <div class="wrap">
+    <h2 class="title"><span class="higher">32</span><span class="higher"><span class="lower">LOTES </span><span class="lower">PLANOS</span></span></h2><a role="button"><span class="icons-paper"></span><span class="text v-centered">Clique para visualizar a listagem e metragem dos lotes.</span></a>
+    <div class="row">
+      <figure><img src="assets/img/prime_logistics_photo_04.png" width="313" height="155"/></figure>
+      <figure><img src="assets/img/prime_logistics_photo_05.png" width="313" height="155"/></figure>
+      <figure><img src="assets/img/prime_logistics_photo_06.png" width="313" height="155"/></figure>
+      <p>DeltaLog é um condomínio industrial localizado as margens da SP75 (Rodovia Santos Dumont). Com logística privilegiada o DeltaLog oferece lotes a partir de 1000m2, planos pronto para construir. Toda a infra-estrutura como ruas, esgoto e asfato já estão concluídos. DeltaLog é ideal para empresas de pequeno e médio porte que se preocupam com segurança, logística e atendimento. Está localizado na cidade de Salto/SP, entre as cidades de Itu e Indaituba e a poucos quilômetros de Campinas e Sorocaba. O condomínio DeltaLog já possuí três projetos de galpão aprovados para construção, agilizando ainda mais o processo de implantação.</p>
+    </div>
+    <h2> <span class="bold">MAPA </span>CONDOMÍNIO</h2><a role="button" class="x"><span class="icons-paper"></span><span class="text v-centered">Clique para visualizar a listagem e metragem dos lotes.</span></a>
+  </div>
 </section>
+<section id="video">
+  <div class="wrap">
+    <p><span class="big">32 </span><span class="text v-centered"><span class="bold">Lotes planos prontos para construir. </span>Investimento em segurança, logistica e atendimento.</span></p><img src="assets/img/footer_logo.png" class="logo"/>
+    <iframe src="https://www.youtube.com/embed/F4HLrIHdldA" frameborder="0" allowfullscreen="allowfullscreen"></iframe><img src="assets/img/footer_logo.png" class="logo"/>
+    <form method="post" action="assets/inc/send-contact.php">
+      <div class="col1">
+        <input type="text" name="nome" class="text"/>
+        <input type="email" name="email" class="text"/>
+        <input type="tel" name="fone" class="text"/>
+      </div>
+      <div class="col2">
+        <textarea class="text"></textarea>
+        <input type="submit" value="ENVIAR" class="submit"/>
+      </div>
+    </form>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="col"><span class="icons-location"></span>
+      <div class="text">
+        <p class="bold">Condomínio Industrial DeltaLog</p>
+        <p>Rua Suiça, 1303 / Jd. Sontag</p>
+        <p>Margem da SP75</p>
+        <p>Salto/SP</p>
+      </div>
+    </div>
+    <div class="col"><span class="icons-mail"></span>
+      <div class="text">
+        <p>Vendas / Informações:</p>
+        <p class="bold margin">Imobiliária Mais Consultoria</p>
+        <p>vanderson@maisconsultoria.imb.br</p>
+        <p class="bold margin">Imobiliária Salto</p>
+        <p>atendimento@imobiliariasalto.com.br</p>
+      </div>
+    </div>
+    <div class="col"><span class="icons-phone"></span>
+      <div class="text">
+        <p>Contato vendas/Informações:</p>
+        <p class="bold margin">Imobiliária Mais Consultoria</p>
+        <p>11.8787.1111 - Corretor Vanderson</p>
+        <p class="bold margin">Imobiliária Salto</p>
+        <p>11.8787.2222 - Corretor Luiz</p>
+      </div>
+    </div>
+  </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1833.6879581228386!2d-47.31234857605897!3d-23.19296711407919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1439322190283" frameborder="0" style="border:0" allowfullscreen="allowfullscreen" class="map"></iframe>
+</footer>

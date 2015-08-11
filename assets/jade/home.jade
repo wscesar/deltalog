@@ -103,11 +103,93 @@ section#project
 		p Mobilidade, a rua principal do condomínio foi planejada para facilitar a manobra de carga e descarga por caminhões.
 
 
-section#lotes
-	h2 
-		span.alto 32
-		span.alto
-			span LOTES 
-			span PLANOS
+section#allotments
+	.wrap
+		h2.title
+			span.higher 32
+			span.higher
+				span.lower LOTES 
+				span.lower PLANOS
+
+		a(role="button")
+			span.icons-paper
+			span.text.v-centered Clique para visualizar a listagem e metragem dos lotes.
+
+		.row
+			figure
+				img(src="assets/img/prime_logistics_photo_04.png", width="313", height="155")
+
+			figure
+				img(src="assets/img/prime_logistics_photo_05.png", width="313", height="155")
+								
+			figure
+				img(src="assets/img/prime_logistics_photo_06.png", width="313", height="155")
+
+			p DeltaLog é um condomínio industrial localizado as margens da SP75 (Rodovia Santos Dumont). Com logística privilegiada o DeltaLog oferece lotes a partir de 1000m2, planos pronto para construir. Toda a infra-estrutura como ruas, esgoto e asfato já estão concluídos. DeltaLog é ideal para empresas de pequeno e médio porte que se preocupam com segurança, logística e atendimento. Está localizado na cidade de Salto/SP, entre as cidades de Itu e Indaituba e a poucos quilômetros de Campinas e Sorocaba. O condomínio DeltaLog já possuí três projetos de galpão aprovados para construção, agilizando ainda mais o processo de implantação.
+
+		h2 
+			span.bold MAPA 
+			| CONDOMÍNIO
+
+		a(role="button").x
+			span.icons-paper
+			span.text.v-centered Clique para visualizar a listagem e metragem dos lotes.
+
+section#video
+	.wrap
+
+		p
+			span.big 32 
+			span.text.v-centered
+				span.bold Lotes planos prontos para construir. 
+				| Investimento em segurança, logistica e atendimento.
+		
+		img(src="assets/img/footer_logo.png").logo
 
 
+		iframe(src="https://www.youtube.com/embed/F4HLrIHdldA", frameborder="0", allowfullscreen)
+
+
+		img(src="assets/img/footer_logo.png").logo
+
+
+		form(method="post",action="assets/inc/send-contact.php")
+			.col1
+				input(type="text", name="nome").text
+				input(type="email", name="email").text
+				input(type="tel", name="fone").text
+
+			.col2
+				textarea.text
+				input(type="submit", value="ENVIAR").submit
+
+footer
+	.wrap
+		.col
+			span.icons-location
+			.text
+				p.bold Condomínio Industrial DeltaLog
+				p Rua Suiça, 1303 / Jd. Sontag
+				p Margem da SP75
+				p Salto/SP
+
+		.col
+			span.icons-mail
+			.text
+				p Vendas / Informações:
+				p.bold.margin Imobiliária Mais Consultoria
+				p vanderson@maisconsultoria.imb.br
+				p.bold.margin Imobiliária Salto
+				p atendimento@imobiliariasalto.com.br
+
+
+		.col
+			span.icons-phone
+			.text
+				p Contato vendas/Informações:
+				p.bold.margin Imobiliária Mais Consultoria
+				p 11.8787.1111 - Corretor Vanderson
+				p.bold.margin Imobiliária Salto
+				p 11.8787.2222 - Corretor Luiz
+				
+	iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1833.6879581228386!2d-47.31234857605897!3d-23.19296711407919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1439322190283", frameborder="0", style="border:0", allowfullscreen).map
