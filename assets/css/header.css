@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'transition'.
-        on line 34 of C:/xampp/htdocs/deltalog/assets/sass/header.sass, in `transition'
-        from line 34 of C:/xampp/htdocs/deltalog/assets/sass/header.sass
+        on line 34 of C:/xampp2/htdocs/deltalog/assets/sass/header.sass, in `transition'
+        from line 34 of C:/xampp2/htdocs/deltalog/assets/sass/header.sass
 
 29: 		background: #3f454d
 30: 		display: block
@@ -16,8 +16,8 @@ Error: Undefined mixin 'transition'.
 39: 			border-left: 0
 
 Backtrace:
-C:/xampp/htdocs/deltalog/assets/sass/header.sass:34:in `transition'
-C:/xampp/htdocs/deltalog/assets/sass/header.sass:34
+C:/xampp2/htdocs/deltalog/assets/sass/header.sass:34:in `transition'
+C:/xampp2/htdocs/deltalog/assets/sass/header.sass:34
 C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
@@ -84,4 +84,4 @@ C:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'transition'.\A         on line 34 of C:/xampp/htdocs/deltalog/assets/sass/header.sass, in `transition'\A         from line 34 of C:/xampp/htdocs/deltalog/assets/sass/header.sass\A \A 29: 		background: #3f454d\A 30: 		display: block\A 31: 		float: left\A 32: 		height: 100px\A 33: 		width: calc(100%/5)\A 34: 		+transition(background 0.5s)\A 35: 		font-size: 12px\A 36: 		border-left: solid 1px #545961\A 37: \A 38: 		&:first-child\A 39: 			border-left: 0"; }
+  content: "Error: Undefined mixin 'transition'.\A         on line 34 of C:/xampp2/htdocs/deltalog/assets/sass/header.sass, in `transition'\A         from line 34 of C:/xampp2/htdocs/deltalog/assets/sass/header.sass\A \A 29: 		background: #3f454d\A 30: 		display: block\A 31: 		float: left\A 32: 		height: 100px\A 33: 		width: calc(100%/5)\A 34: 		+transition(background 0.5s)\A 35: 		font-size: 12px\A 36: 		border-left: solid 1px #545961\A 37: \A 38: 		&:first-child\A 39: 			border-left: 0"; }
