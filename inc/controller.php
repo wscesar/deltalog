@@ -9,7 +9,7 @@
 
     // Choosing the title and metatags
 
-    $title_ptn = 'Structure Boilerplate';
+    $title_ptn = 'Deltalog';
 
     switch($page) {
 

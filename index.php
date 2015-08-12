@@ -5,19 +5,20 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1280">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
     <!-- <?=$metas?> -->
 
     <title><?=$title?></title>
 
     <!-- Base Link -->
-    <base href="http://localhost/deltalog/">
+    <base href="http://192.168.0.10/deltalog/">
 
     <!-- Favicon -->
     <link rel="icon" href="assets/img/favicon.ico">
 
     <!-- Css -->
     <link rel="stylesheet" href="assets/css/main.css">
+
 
     <!-- HTML5 Shiv -->
     <!--[if lt IE 9]><script src="assets/js/vendor/html5.js"></script><![endif]-->
