@@ -2,29 +2,47 @@ header
 	background: url(../img/banner.png) center top no-repeat
 	color: #fff
 	height: 483px
+	+transition(margin-bottom 0.5s)
+
+
+
+	&.fixed
+		margin-bottom: 100px
 
 	.logo
 		display: block
 		margin: 203px auto 146px
 
 	h1
-		font-size: 33.33px
-		font-weight: 300
+		font-size: 2.38rem
 		text-align: center
 
 nav
 	color: #fff
 	text-align: center
+	+transition(0.5s)
+	z-index: 2
+
+	&.fixed
+		position: fixed
+		height: auto
+
+		a
+			height: 40px
+
+	button
+		display: none
 
 	a
 		background: #3f454d
+		border-left: solid 1px #545961
 		display: block
 		float: left
+		font-size: 0.85rem
 		height: 100px
-		width: calc(100%/5)
-		+transition(background 0.5s)
-		font-size: 12px
-		border-left: solid 1px #545961
+		overflow: hidden
+		+transition(background, height 0.5s)
+		width: 20%
 
 		&:first-child
 			border-left: 0

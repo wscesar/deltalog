@@ -1,5 +1,4 @@
 section#prime-logistics
-	margin-bottom: 68px
 
 	&::after
 		background: url(../img/strategic_location.png) center no-repeat
@@ -10,23 +9,23 @@ section#prime-logistics
 		width: 100%
 
 	h2
-		font-size: 44.78px
-		text-align: center
-		padding-top: 99px
-		height: 228px
 		display: block
+		font-size: 44.78px
+		height: 228px
+		padding-top: 99px
+		text-align: center
 
 	.banner
-		width: 100%
-		height: 465px
 		background: url(../img/infrastructure.png) center no-repeat
-		float: left
 		display: block
+		float: left
+		height: 465px
+		width: 100%
 
 		.ctrl
 			bottom: 18px
-			margin: auto
 			left: 50%
+			margin: auto
 			position: absolute
 			width: 122px
 			+transform(translateX(-50%))
@@ -47,16 +46,17 @@ section#prime-logistics
 					margin: 0 18px
 
 	.strategic_location
-		width: 100%
-		height: 524px
-		float: left
-		display: block
-		background: url(../img/man_planning.png) center
+		background: url(../img/man_planning.png) center no-repeat
+		background-size: auto 100%
 		color: #fff
+		float: left
+		min-height: 524px
+		padding-bottom: 78px
+		width: 100%
 
 		h2
 			text-align: center
-			font-size: 49.56px
+			font-size: 3.54rem
 			font-weight: lighter
 
 		p
@@ -80,6 +80,7 @@ section#prime-logistics
 
 		figure
 			display: inline-block
+			vertical-align: top
 
 			&::after
 				content: ""
@@ -90,21 +91,30 @@ section#prime-logistics
 				width: 58px
 				+transform(translateX(-50%))
 
+			figcaption h3
+				font-size: 37.39px
+				margin: 60px auto 23px
+
+		.row_01 figure
+			width: 236px
+			+transition(0.5s)
+
+			img
+				display: block
+				border-radius: 100%
+				overflow: hidden
+				width: 236px
+				height: 236px
+				// +transition(0.5s)
+
+				// img
+				// 	+transition(0.5s)
+				// 	border-radius: 100%
+
 			figcaption
 				width: 120%
 				margin: 0 auto 0 50%
 				+transform(translateX(-50%))
-
-				h3
-					font-size: 37.39px
-					margin: 60px auto 23px
-
-				p
-					.br
-						display: block
-
-		.row_01 figure
-			width: 236px
 
 			&:nth-child(2)
 				margin: 0 128px
@@ -114,14 +124,22 @@ section#prime-logistics
 				content: ""
 				top: 207px
 
-
-		.row_02 figure
+		.row_02 
 			margin: 104px auto 91px
-			width: 313px
 
-			&:nth-child(2)
-				margin: 0 8px
+			figure
+				width: 313px
 
-			&::after
-				background: url(../img/icons_sprite.png) 0 -161px no-repeat
-				top: 127px
+				figcaption
+					margin-top: 49px
+					font-weight: 700
+
+				&:nth-child(2)
+					margin: 0 8px
+
+				&::after
+					background: url(../img/icons_sprite.png) 0 -161px no-repeat
+					top: 127px
+
+// .frame:hover img
+// 	+transform(scale(2) rotate(-5deg))

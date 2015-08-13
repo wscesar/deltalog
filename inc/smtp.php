@@ -15,11 +15,11 @@
 
         var $port = 587;
 
-        public function put($value) {
-            $fputs = fputs($this->smtp, $value."\n");
-            if($debug) { print fgets($this->smtp, 4096).'<br>'; }
-            return $fputs;
-        }
+        // public function put($value) {
+        //     $fputs = fputs($this->smtp, $value."\n");
+        //     if($debug) { print fgets($this->smtp, 4096).'<br>'; }
+        //     return $fputs;
+        // }
 
         public function send($to, $subject, $message, $from = false) {
 

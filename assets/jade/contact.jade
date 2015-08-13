@@ -1,0 +1,13 @@
+section#contact
+	.wrap
+		img(src="assets/img/logo.svg", width="266", height="37").logo
+		
+		form(method="post",action="inc/send-contact.php")
+			.col1
+				input(type="text", name="nome").text
+				input(type="email", name="email").text
+				input(type="tel", name="fone").text
+
+			.col2
+				textarea(name="msg").text
+				input(type="submit", value="ENVIAR").submit

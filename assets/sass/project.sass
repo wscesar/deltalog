@@ -1,6 +1,8 @@
 section#project
 	background: $bg-blue
 	color: #fff
+	overflow: hidden
+	margin-top: 68px
 	text-align: center
 	width: 100%
 
@@ -12,6 +14,7 @@ section#project
 
 	.cols
 		display: inline-block
+		vertical-align: top
 
 		.icon
 			background-image: url(../img/icons_sprite.png)
@@ -43,13 +46,15 @@ section#project
 			margin: 24px auto 38px
 
 		&::after
+			background: url(../img/icons_sprite.png) 0 -161px no-repeat
+			bottom: 89px
 			content: ""
 			display: block
 			height: 58px
 			position: absolute
-			top: 50%
+			right: -29px
 			width: 58px
-			+transform(translateY(-50%))
+
 
 	.description
 		clear: both

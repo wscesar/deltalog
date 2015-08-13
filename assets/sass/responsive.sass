@@ -13,38 +13,235 @@
 @media only screen and (max-width: 479px) 
 	.wrap
 		width: 100%
+		overflow: hidden
+		padding: 0 10px
 
 	header 
-		padding: 40px 10px
+		padding: 60px 10px 40px
 		height: auto
-		
+
 		.logo
-			width: 80%
-			margin: 0 auto 40px
-	
+			display: none
+
+		h1
+			font-size: 2rem
+
+
+	nav
+		top: 0
+		left: -100%
+		height: 40px
+		position: fixed
+		width: 100%
+		z-index: 2
+		+transition(1s)
+
+		a
+			width: 100%
+			height: 20%
+
+		&.active
+			left: 0
+			height: 100%
+
+		button
+			background: url(../img/logo.svg) center no-repeat #3f454d
+			background-size: auto 21px
+			display: block
+			height: 40px
+			right: -100%
+			position: absolute
+			width: 100%
+			+transition(1s)
+
+			span
+				background: $dark-blue
+				display: block
+				height: 2px
+				left: 4px
+				position: absolute
+				transition: 1s
+				width: 30px
+
+				&:nth-child(1)
+					top: 10px
+
+				&:nth-child(2)
+					top: 19px
+
+				&:nth-child(3)
+					bottom: 10px
+
+
+
 	section#prime-logistics 
 		h2
-			padding: 40px 0
+			padding: 10% 0
 			height: auto
+			font-size: 2rem
 			
 			.br
 				display: none
 
-	section#prime-logistics 
 		.photos .row_01 figure,
-		.photos .row_01 figure:nth-child(2) 
+		.photos .row_02 figure,
+		.photos .row_01 figure:nth-child(2),
+		.photos .row_02 figure:nth-child(2)
 			margin: 0 auto 40px
+			width: 100%
+		
+		.photos .row_01 figure img,
+		.photos .row_02 figure img
+			height: auto
+			width: 100%
 
-	section#prime-logistics .strategic_location p
-		padding: 0 10px
+		.photos .row_02 figure
+			&::after
+				top: -29px
+
+			figcaption
+				margin-bottom: 20px
+				margin-top: 5px
+
+
+
+		.strategic_location
+			h2
+				font-size: 2rem
+
+			p
+				padding: 0 10px
+
+
 
 	section#project 
 		.col2
 			margin: 0 auto 40px
 
 		.description
-			padding: 0 20px
+			padding: 0 10px
 
-	section#video iframe
-		width: 100%
-		min-height: 269px
+
+
+	section#allotments
+		padding-top: 20px
+
+		&::after
+			display: none
+			margin: 20px 0
+			background-size: 100% auto
+
+		.wrap
+			padding: 0 5px
+
+		h2
+			float: none
+			text-align: center
+
+		h2.title
+			height: 60px
+			margin: auto
+			width: 181px
+
+			span, 
+			span.higher,
+			span.lower,
+			span.lower:first-child,
+			span.lower:last-child
+				display: inline-block
+				font-size: 2rem
+				height: auto
+				margin-left: 0
+				margin-top: 0
+				vertical-align: top
+
+			span.higher
+				font-size: 4.2rem
+
+			span.lower:first-child
+				margin-top: 7px
+
+		a[role="button"]
+			margin: 30px auto
+			float: none
+
+			span.text
+				width: calc(100% - 84px)
+
+		.row
+			margin-top: 0
+
+			figure,
+			figure:nth-child(2)
+				margin: 15px 0
+				width: 100%
+
+				img
+					height: auto	
+					width: 100%
+
+
+			figure::after
+				opacity: 0.7
+				top: 50%
+				+transform(translateY(-50%) translateX(-50%))
+
+		.textbox
+			margin-top: 40px
+
+
+
+	section#video
+		padding-top: 40px
+
+		.wrap
+			padding: 0 10px
+
+		p
+			height: auto
+			float: none
+
+			span.big
+				display: inline
+				float: none
+				font-size: 1rem
+				font-weight: 700
+
+			span.text
+				float: none
+				display: inline
+		
+		iframe
+			height: auto
+			width: 100%
+
+		.logo
+			margin: 20px auto
+			float: none
+			width: 100%
+			max-width: 266px
+	
+	section#contact
+		form
+			.col1, .col2
+				width: 100%
+				padding: 0 10px
+
+			input.submit
+				width: 100%
+
+	footer
+		.col
+			width: 100%
+			text-align: center
+
+			span
+				float: none
+				margin: 0 auto 20px
+			
+			.text
+				float: none
+				margin: 0 auto 40px
+
+		.map
+			margin: 0

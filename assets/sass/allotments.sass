@@ -15,7 +15,7 @@ section#allotments
 	.wrap
 		padding: 0 34px
 
-	p
+	.textbox
 		line-height: 25px
 		margin: 82px 7px 97px
 		opacity: 0.7
@@ -23,10 +23,11 @@ section#allotments
 
 	a[role="button"]
 		color: #fff
-		cursor: pointer
-		height: 58px
+		display: block
 		float: left
+		height: 58px
 		margin: 47px 0 0 171px
+		max-width: 289px
 		
 		span.icons-paper
 			display: block
@@ -75,6 +76,7 @@ section#allotments
 		
 		figure
 			display: inline-block
+			vertical-align: top
 			width: 313px
 
 			&::after
@@ -83,9 +85,9 @@ section#allotments
 				left: 50%
 				height: 58px
 				position: absolute
-				top: 126px
+				top: 100%
 				width: 58px
-				+transform(translateX(-50%))
+				+transform(translateX(-50%) translateY(-50%))
 
 			&:nth-child(2)
 				margin: 0 12px
@@ -94,7 +96,6 @@ section#allotments
 		clear: both
 		float: left
 		font-size: 1.96rem
-		font-weight: 300
 		display: block
 
 	a.x

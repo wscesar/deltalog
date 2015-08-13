@@ -1,5 +1,5 @@
 <?php
-
+    extract($_POST);
     include 'smtp.php';
 
     /*  ==========================================================================
@@ -8,8 +8,8 @@
 
     // Config
 
-    $smtp->host = ''; // smtp.myserver.com
-    $smtp->user = ''; // myuser@myserver.com
+    $smtp->host = 'mail.ituinformatica.com'; // smtp.myserver.com
+    $smtp->user = 'william@ituinformatica.com'; // myuser@myserver.com
     $smtp->pass = ''; // mypop3password
 
 
@@ -24,6 +24,6 @@
 
     // Send
 
-    $smtp->send('to@email.com', 'Subject', $msg);
+    $smtp->send('wscesar@gmail.com', 'testando envio', $msg);
 
 ?>
