@@ -1,4 +1,5 @@
 section#prime-logistics
+	margin-bottom: 68px
 
 	&::after
 		background: url(../img/strategic_location.png) center no-repeat
@@ -16,11 +17,20 @@ section#prime-logistics
 		text-align: center
 
 	.banner
-		background: url(../img/infrastructure.png) center no-repeat
 		display: block
 		float: left
 		height: 465px
 		width: 100%
+		+transition(0.5s)
+
+		&[data-banner="1"]
+			background: url(../img/infrastructure.png) center no-repeat
+
+		&[data-banner="2"]
+			background: url(../img/man_planning.png) center no-repeat
+
+		&[data-banner="3"]
+			background: url(../img/infrastructure3.png) center no-repeat
 
 		.ctrl
 			bottom: 18px
@@ -33,6 +43,7 @@ section#prime-logistics
 			button
 				background: rgba(255,255,255,0.25)
 				border-radius: 100%
+				cursor: pointer
 				display: inline-block
 				height: 26px
 				width: 26px
@@ -140,6 +151,3 @@ section#prime-logistics
 				&::after
 					background: url(../img/icons_sprite.png) 0 -161px no-repeat
 					top: 127px
-
-// .frame:hover img
-// 	+transform(scale(2) rotate(-5deg))

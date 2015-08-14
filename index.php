@@ -41,16 +41,14 @@
 
     <script>
 
-        $("nav a").on("click", function() {
+        $('nav a').on('click', function() {
 
-            page = $(this).attr("data-page")
+            page = $(this).attr('data-page')
 
             goTo = $(page).position();
 
-            $("html, body").stop().animate({
-
+            $('html, body').stop().animate({
                 scrollTop: goTo.top
-
             },1000)
 
         })
@@ -61,18 +59,14 @@
 
         $(window).scroll(function() {
 
-            var y = $("header").height()
+            var y = $('header').height()
 
             var t = $(window).scrollTop()
 
             if(t > y) {
-
-                $("nav, header").addClass("fixed")
-
+                $('nav, header').addClass('fixed')
             }else {
-
-                $("nav, header").removeClass("fixed")
-
+                $('nav, header').removeClass('fixed')
             }
 
             var yPos = ($(window).scrollTop() / $obj.data('speed')); 
@@ -83,16 +77,103 @@
 
         });
 
+
+
+        var banner_thumbs = document.querySelectorAll('.ctrl > button');
+
+        function changeBanner(elem){
+            var banner      = document.querySelector('#prime-logistics > .banner');
+                next_image  = elem.getAttribute('data-banner');
+
+            //pass trough banner_thumbs removing 'active' class
+            for (i = 0; i < banner_thumbs.length; i++) {
+                banner_thumbs[i].classList.remove('active')
+            }
+
+            //add 'active' class on clicked button
+            elem.classList.add('active');
+
+            // hide banner
+            banner.style.opacity = "0"
+            
+            // change image
+            banner.setAttribute('data-banner', next_image)
+
+            // show banner
+            banner.style.opacity = "1"
+            
+        }
+
+        // apply changeBanner() on all banner_thumbs 
+        for (i = 0; i < banner_thumbs.length; i++) {
+            banner_thumbs[i].addEventListener("click", function(){
+                changeBanner(this)
+            }, false)
+        }
+
+
+
+
+        // shows hidden nav on responsive mode
+        document.querySelector('nav .button').addEventListener("click", function() {
+            document.querySelector('nav').classList.add('active')
+
+        })
+
+        // hide nav on responsive mode on touch some 'nav > a' element
+        var nav_a = document.querySelectorAll('nav a')
+
+        for (i = 0; i < nav_a.length; i++) {
+            nav_a[i].addEventListener("click", function() {
+                document.querySelector('nav').classList.remove('active')
+            }, false)
+        }
+
+
     </script>
 
-    <script>
-            // $( "nav" ).on( "swipeleft", function(){
-            //     $("nav").removeClass("active")
-            // })
+    <script>//swipe.js
+        document.addEventListener('touchstart', handleTouchStart, false);        
+        document.addEventListener('touchmove', handleTouchMove, false);
 
-            $( "nav button" ).on( "click", function(){
-                $("nav").addClass("active")
-            })
+        var xDown = null;                                                        
+        var yDown = null;                                                        
+
+        function handleTouchStart(evt) {        
+            xDown = evt.touches[0].clientX;                                      
+            yDown = evt.touches[0].clientY;                                      
+        };                                                
+
+        function handleTouchMove(evt) {
+            if ( ! xDown || ! yDown ) {
+                return;
+            }
+
+            var xUp = evt.touches[0].clientX;                                    
+            var yUp = evt.touches[0].clientY;
+
+            var xDiff = xDown - xUp;
+            var yDiff = yDown - yUp;
+
+            if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+                if ( xDiff > 0 ) {
+                    /* left swipe */ 
+                    document.querySelector('nav').classList.remove('active')
+
+                } else {
+                    /* right swipe */
+                }                       
+            } else {
+                if ( yDiff > 0 ) {
+                    /* up swipe */ 
+                } else { 
+                    /* down swipe */
+                }                                                                 
+            }
+            /* reset values */
+            xDown = null;
+            yDown = null;                                             
+        };
     </script>
 
 

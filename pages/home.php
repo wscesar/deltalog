@@ -5,17 +5,15 @@
   </div>
 </header>
 <nav>
-  <div class="wrap"><a data-page="#prime-logistics"><span>LOGÍSTICA PRIVILEGIADA</span></a><a data-page="#project"><span>PROJETO</span></a><a data-page="#allotments"><span>LOTES</span></a><a data-page="#video"><span>VIDEO APRESENTAÇÃO</span></a><a data-page="#contact"><span>CONTATO/VENDAS</span></a>
-    <button> <span></span><span></span><span></span></button>
-  </div>
+  <div class="wrap"><a data-page="#prime-logistics"><span>LOGÍSTICA PRIVILEGIADA</span></a><a data-page="#project"><span>PROJETO</span></a><a data-page="#allotments"><span>LOTES</span></a><a data-page="#video"><span>VIDEO APRESENTAÇÃO</span></a><a data-page="#contact"><span>CONTATO/VENDAS</span></a><span class="button"> <span class="stripe"></span><span class="stripe"></span><span class="stripe"></span></span></div>
 </nav>
 <section id="prime-logistics">
   <h2>INFRAESTRUTURA COMPLETA <span class="br"> </span>LOTES INDUSTRIAIS A PARTIR DE <b>1000m<sup>2</sup></b></h2>
-  <div class="banner">
+  <div data-banner="1" class="banner">
     <div class="ctrl">
-      <button class="active"></button>
-      <button></button>
-      <button></button>
+      <button data-banner="1" class="active"></button>
+      <button data-banner="2"></button>
+      <button data-banner="3"></button>
     </div>
   </div>
   <div class="strategic_location">
