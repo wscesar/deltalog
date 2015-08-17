@@ -8,7 +8,7 @@
   <div class="wrap"><a data-page="#prime-logistics"><span>LOGÍSTICA PRIVILEGIADA</span></a><a data-page="#project"><span>PROJETO</span></a><a data-page="#allotments"><span>LOTES</span></a><a data-page="#video"><span>VIDEO APRESENTAÇÃO</span></a><a data-page="#contact"><span>CONTATO/VENDAS</span></a><span class="button"> <span class="stripe"></span><span class="stripe"></span><span class="stripe"></span></span></div>
 </nav>
 <section id="prime-logistics">
-  <h2>INFRAESTRUTURA COMPLETA <span class="br"> </span>LOTES INDUSTRIAIS A PARTIR DE <b>1000m<sup>2</sup></b></h2>
+  <h2 class="title">INFRAESTRUTURA COMPLETA <span class="br"> </span>LOTES INDUSTRIAIS A PARTIR DE <b>1000m<sup>2</sup></b></h2>
   <div data-banner="1" class="banner">
     <div class="ctrl">
       <button data-banner="1" class="active"></button>
@@ -17,44 +17,42 @@
     </div>
   </div>
   <div class="strategic_location">
-    <div class="text">
+    <div class="text wrap">
       <h2>LOCALIZAÇÃO <b>ESTRATÉGICA</b></h2>
       <p>DeltaLog é um condomínio Industrial planejado para oferecer uma logística extremamente eficiente. Localizado as margens da Rodovia SP75, o condomínio permite acesso simples e rápido as principais rodovia do pais, como Castelo Branco, Bandeirantes e Anhanguera. Além de transporte rodoviário, DeltaLog está próximo ao Aeroporto Internacional de ViraCopos, e apenas 2 horas de um dos principais portos do pais. <span class="br"></span>Clique abaixo para visualizar mais detalhes sobre distâncias de cidades, aeroportos e portos. </p>
     </div>
   </div>
   <div class="photos">
-    <div class="wrap">
-      <div class="row_01">
-        <figure><img src="assets/img/prime_logistics_photo_01.png" width="236" height="236"/>
-          <figcaption>
-            <h3>CIDADES</h3>
-            <p>DeltaLog está próximo a <span class="br"></span>grandes centros urbanos.<span class="br"></span>Clique no ícone acima.</p>
-          </figcaption>
-        </figure>
-        <figure><img src="assets/img/prime_logistics_photo_02.png" width="236" height="236"/>
-          <figcaption>
-            <h3>PORTOS</h3>
-            <p>DeltaLog está localizado a poucas horas <span class="br"></span>de um dos principais portos do pais.<span class="br"></span>Clique no ícone acima.</p>
-          </figcaption>
-        </figure>
-        <figure><img src="assets/img/prime_logistics_photo_03.png" width="236" height="236"/>
-          <figcaption>
-            <h3>AEROPORTOS</h3>
-            <p>DeltaLog está localizado apenas alguns <span class="br"></span>minutos do aeroporto internacional.<span class="br"></span>Clique no ícone acima.</p>
-          </figcaption>
-        </figure>
-      </div>
-      <div class="row_02">
-        <figure><img src="assets/img/prime_logistics_photo_04.png" width="313" height="155"/>
-          <figcaption>Acesso SP75 - Sorocaba e <span class="br"></span>São Paulo via Castelo Branco</figcaption>
-        </figure>
-        <figure><img src="assets/img/prime_logistics_photo_05.png" width="313" height="155"/>
-          <figcaption>Acesso SP75 - Campinas e <span class="br"></span>São Paulo via Bandeirantes</figcaption>
-        </figure>
-        <figure><img src="assets/img/prime_logistics_photo_06.png" width="313" height="155"/>
-          <figcaption>Acesso ao deltaLog pelos dois<span class="br"></span>sentidos Campinas e Sorocaba</figcaption>
-        </figure>
-      </div>
+    <div class="row_01 wrap">
+      <figure><img src="assets/img/prime_logistics_photo_01.png" width="236" height="236"/>
+        <figcaption>
+          <h3>CIDADES</h3>
+          <p>DeltaLog está próximo a <span class="br"></span>grandes centros urbanos.<span class="br"></span>Clique no ícone acima.</p>
+        </figcaption>
+      </figure>
+      <figure><img src="assets/img/prime_logistics_photo_02.png" width="236" height="236"/>
+        <figcaption>
+          <h3>PORTOS</h3>
+          <p>DeltaLog está localizado a poucas horas <span class="br"></span>de um dos principais portos do pais.<span class="br"></span>Clique no ícone acima.</p>
+        </figcaption>
+      </figure>
+      <figure><img src="assets/img/prime_logistics_photo_03.png" width="236" height="236"/>
+        <figcaption>
+          <h3>AEROPORTOS</h3>
+          <p>DeltaLog está localizado apenas alguns <span class="br"></span>minutos do aeroporto internacional.<span class="br"></span>Clique no ícone acima.</p>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="row_02 wrap">
+      <figure><img src="assets/img/prime_logistics_photo_04.png" width="313" height="155"/>
+        <figcaption>Acesso SP75 - Sorocaba e <span class="br"></span>São Paulo via Castelo Branco</figcaption>
+      </figure>
+      <figure><img src="assets/img/prime_logistics_photo_05.png" width="313" height="155"/>
+        <figcaption>Acesso SP75 - Campinas e <span class="br"></span>São Paulo via Bandeirantes</figcaption>
+      </figure>
+      <figure><img src="assets/img/prime_logistics_photo_06.png" width="313" height="155"/>
+        <figcaption>Acesso ao deltaLog pelos dois<span class="br"></span>sentidos Campinas e Sorocaba</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -63,12 +61,12 @@
     <h2>PROJETO DELTALOG</h2>
     <div class="cols col1"><span class="icon"></span>
       <figure>
-        <figcaption>SEGURANÇA 24H</figcaption><img src="assets/img/project_photo_01.png" width="236" height="236"/>
+        <figcaption>SEGURANÇA <span class="br"></span>24H</figcaption><img src="assets/img/project_photo_01.png" width="236" height="236"/>
       </figure>
     </div>
     <div class="cols col2"><span class="icon"></span>
       <figure>
-        <figcaption>ALIMENTAÇÃO/NEGÓCIOS</figcaption><img src="assets/img/project_photo_02.png" width="236" height="236"/>
+        <figcaption>ALIMENTAÇÃO<span class="br">/</span>NEGÓCIOS</figcaption><img src="assets/img/project_photo_02.png" width="236" height="236"/>
       </figure>
     </div>
     <div class="cols col3"><span class="icon"></span>
@@ -94,7 +92,7 @@
         <p> <b>O condomínio DeltaLog já possuí três projetos de galpão aprovados para construção, </b>agilizando ainda mais o processo de implantação.</p>
       </div>
     </div>
-    <h2> <span class="bold">MAPA </span>CONDOMÍNIO</h2><a role="button" class="x"><span class="icons-paper"></span><span class="text v-centered">Clique para visualizar a listagem e metragem dos lotes.</span></a>
+    <h2 class="subtitle"><span class="bold">MAPA </span>CONDOMÍNIO</h2><a role="button"><span class="icons-paper"></span><span class="text v-centered">Clique para visualizar a listagem e metragem dos lotes.</span></a>
   </div>
 </section>
 <section id="video">

@@ -12,7 +12,7 @@
     <title><?=$title?></title>
 
     <!-- Base Link -->
-    <base href="http://192.168.1.105/deltalog/">
+    <base href="http://192.168.1.104/deltalog/">
 
     <!-- Favicon -->
     <link rel="icon" href="assets/img/favicon.ico">
@@ -53,36 +53,33 @@
 
         })
 
-        
 
-        var $obj = $('.bgParallax');
+        window.onscroll = function() {
+            var window_top_position = window.pageYOffset,
+                parallax_banner     = document.querySelector('.bgParallax'),
+                header_height       = document.querySelector('header').offsetHeight,
+                nav                 = document.querySelector('nav');
+                
+                // img                 = document.querySelector('h1');
+                // speed = (30 - window_top_position) * 0.1;
+                // img.style.textShadow = '0 '+ speed + 'px 10px #0f0';
 
-        $(window).scroll(function() {
+            // change parallax banner position
+            parallax_banner.style.backgroundPosition = '50% '+ window_top_position + 'px';
+            
 
-            var y = $('header').height()
-
-            var t = $(window).scrollTop()
-
-            if(t > y) {
-                $('nav, header').addClass('fixed')
+            // set nav position to fixed if window top position pass the banner height
+            if(window_top_position > header_height) {
+                nav.classList.add('fixed')
             }else {
-                $('nav, header').removeClass('fixed')
+                nav.classList.remove('fixed')
             }
-
-            var yPos = ($(window).scrollTop() / $obj.data('speed')); 
-
-            var bgpos = '50% '+ yPos + 'px';
-
-            $obj.css('background-position', bgpos );
-
-        });
-
-
+        };
 
         var banner_thumbs = document.querySelectorAll('.ctrl > button');
 
         function changeBanner(elem){
-            var banner      = document.querySelector('#prime-logistics > .banner');
+            var banner      = document.querySelector('#prime-logistics > .banner'),
                 next_image  = elem.getAttribute('data-banner');
 
             //pass trough banner_thumbs removing 'active' class
@@ -106,7 +103,7 @@
 
         // apply changeBanner() on all banner_thumbs 
         for (i = 0; i < banner_thumbs.length; i++) {
-            banner_thumbs[i].addEventListener("click", function(){
+            banner_thumbs[i].addEventListener('click', function(){
                 changeBanner(this)
             }, false)
         }
@@ -115,7 +112,7 @@
 
 
         // shows hidden nav on responsive mode
-        document.querySelector('nav .button').addEventListener("click", function() {
+        document.querySelector('nav .button').addEventListener('click', function() {
             document.querySelector('nav').classList.add('active')
 
         })
@@ -124,7 +121,7 @@
         var nav_a = document.querySelectorAll('nav a')
 
         for (i = 0; i < nav_a.length; i++) {
-            nav_a[i].addEventListener("click", function() {
+            nav_a[i].addEventListener('click', function() {
                 document.querySelector('nav').classList.remove('active')
             }, false)
         }
@@ -159,6 +156,7 @@
                 if ( xDiff > 0 ) {
                     /* left swipe */ 
                     document.querySelector('nav').classList.remove('active')
+                    return false
 
                 } else {
                     /* right swipe */
