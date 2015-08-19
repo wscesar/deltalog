@@ -1,25 +1,17 @@
 <?php
-
-    /* --- SMTP Simple class created by Renan Veroneze © 2013 --- */
-
-    /*  ==========================================================================
-        SMTP => Send mail
-        ==========================================================================  */
-
     class SMTP {
 
         var $host;
         var $user;
         var $pass;
-        var $debug = false;
-
         var $port = 587;
 
-        // public function put($value) {
-        //     $fputs = fputs($this->smtp, $value."\n");
-        //     if($debug) { print fgets($this->smtp, 4096).'<br>'; }
-        //     return $fputs;
-        // }
+        public function put($value) {
+            $debug = false;
+            $fputs = fputs($this->smtp, $value."\n");
+            if($debug) { print fgets($this->smtp, 4096).'<br>'; }
+            return $fputs;
+        }
 
         public function send($to, $subject, $message, $from = false) {
 
@@ -50,5 +42,4 @@
     }
 
     $smtp = new SMTP();
-
 ?>

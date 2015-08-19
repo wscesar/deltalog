@@ -1,17 +1,31 @@
++keyframes(rotate_button)
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+		background-color: none
+
+
+
+/* The element to apply the animation to */
+
+
 section#contact
 	background: $bg-gray
 	padding-top: 97px
 
 	.logo
-		float: right
 		clear: right
+		float: right
 		margin: 60px 0 36px
 
 	form
 		display: block
-		width: 100%
 		float: left
 		margin-bottom: 61px
+		width: 100%
+
+
 
 		.col1
 			float: left
@@ -22,28 +36,91 @@ section#contact
 			float: left
 			width: 705px
 
-		.text
+		label
 			color: #949494
+			left: 8px
+			position: absolute
+			top: 8px
+			+transition(0.2s)
+			width: 100%
+			padding: 0 5px 2px
+
+			&.fixed
+				top: -7px
+				left: 0
+				font-size: 0.8rem
+				color: #fff
+				background: #949494
+				height: auto
+				width: 100%
+
+
+
+		.text
 			background: none
 			border: solid 1px #949494
+			color: #949494
+			font-size: 1rem
 			margin-bottom: 12px
 			padding: 5px
 			width: 100%
-			font-size: 1rem
+
+			&:focus + label
+				top: -7px
+				left: 0
+				font-size: 0.8rem
+				color: #fff
+				background: #949494
+				height: auto
+				width: 100%
+
+			&:invalid
+				background: #f00
+
+
+
 
 		input.text
 			height: 34px
+
+		.nome
+			content: "Nome"
+			position: absolute
+			left: 0
+			top: 0
 		
 		textarea.text
 			height: 126px
 			resize: none
 
-		input.submit
+		.submit
 			background: #00a6ca
 			color: #fff
 			cursor: pointer
 			float: right
 			height: 44px
-			width: 90px
+			min-width: 90px
 			padding: 0 5px
 			font-weight: 700
+			+transition(1s)
+
+			&.loading
+				+animation-name(rotate_button)
+				+animation-delay(1s)
+				+animation-duration(1s)
+				+animation-iteration-count(infinite)
+				+animation-timing-function(linear)
+				background-color: none
+				background: url(../img/loading.png) center no-repeat
+				min-width: 44px
+				border-radius: 100%
+				margin-right: 23px
+
+			&.success
+				background: #0f0
+
+			&.error
+				background: #f00
+
+			
+

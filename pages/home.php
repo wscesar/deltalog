@@ -1,5 +1,5 @@
 
-<header data-speed="1" id="header" class="bgParallax">
+<header>
   <div class="wrap"><img src="assets/img/logo.svg" width="416" height="58" class="logo"/>
     <h1>CONDOMÍNIO INDUSTRIAL COM LOGISTICA ESTRATÉGICA</h1>
   </div>
@@ -103,15 +103,29 @@
 </section>
 <section id="contact">
   <div class="wrap"><img src="assets/img/logo.svg" width="266" height="37" class="logo"/>
-    <form method="post" action="inc/send-contact.php">
+    <form onsubmit="validate_form(); return false">
       <div class="col1">
-        <input type="text" name="nome" class="text"/>
-        <input type="email" name="email" class="text"/>
-        <input type="tel" name="fone" class="text"/>
+        <div>
+          <input type="text" id="name" name="name" class="text"/>
+          <label for="name">Nome</label>
+        </div>
+        <div>
+          <input type="email" id="email" name="email" class="text"/>
+          <label for="email">Email</label>
+        </div>
+        <div>
+          <input type="tel" id="phone" name="phone" class="text"/>
+          <label for="phone">Telefone</label>
+        </div>
       </div>
       <div class="col2">
-        <textarea name="msg" class="text"></textarea>
-        <input type="submit" value="ENVIAR" class="submit"/>
+        <div>
+          <textarea id="msg" name="msg" class="text"></textarea>
+          <label for="msg">Mensagem</label>
+        </div>
+        <div>
+          <button class="submit">enviar</button>
+        </div>
       </div>
     </form>
   </div>

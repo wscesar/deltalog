@@ -10,20 +10,43 @@
 
     $smtp->host = 'mail.ituinformatica.com'; // smtp.myserver.com
     $smtp->user = 'william@ituinformatica.com'; // myuser@myserver.com
-    $smtp->pass = ''; // mypop3password
+    $smtp->pass = 'wsk8c0r3'; // mypop3password
 
 
     // Message
 
     $msg = '<table>
                 <tr>
-                    <td>HTML MESSAGE</td>
+                    <td>Olá, <b>'.strtoupper($name).'</b>, enviou uma mensagem pelo site.</td>
+                </tr>
+
+                <tr>
+                    <td><b>Dados Pessoais</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>Contato:</b> '.$email.'</td>
+                </tr>
+
+                <tr>
+                    <td><b>Mensagem:</b> "'.$msg.'"</td>
+                </tr>
+
+                <tr>
+                    <td><font face="Arial" color="#505050">'.date('d/m/Y - h:i').'</font></td>
                 </tr>
             </table>';
 
 
     // Send
+    // $smtp->send('wscesar@gmail.com', 'testando envio', $msg)
+    $success = $smtp->send('wscesar@gmail.com', 'testando envio', $msg);
 
-    $smtp->send('wscesar@gmail.com', 'testando envio', $msg);
+    if( !$success ) {
+        echo 'ok';
+    }else{
+        echo "error";
+    }
+    
 
 ?>

@@ -2,12 +2,26 @@ section#contact
 	.wrap
 		img(src="assets/img/logo.svg", width="266", height="37").logo
 		
-		form(method="post",action="inc/send-contact.php")
+		//- form(action="inc/send-contact.php", method="post")
+		form(onsubmit="validate_form(); return false")
 			.col1
-				input(type="text", name="nome").text
-				input(type="email", name="email").text
-				input(type="tel", name="fone").text
+				div
+					input(type="text", id="name", name="name").text
+					label(for="name") Nome
+
+				div
+					input(type="email", id="email", name="email").text
+					label(for="email") Email
+
+				div
+					input(type="tel", id="phone", name="phone").text
+					label(for="phone") Telefone
+
 
 			.col2
-				textarea(name="msg").text
-				input(type="submit", value="ENVIAR").submit
+				div
+					textarea(id="msg", name="msg").text
+					label(for="msg") Mensagem
+
+				div
+					button.submit enviar

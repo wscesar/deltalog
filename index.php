@@ -12,7 +12,7 @@
     <title><?=$title?></title>
 
     <!-- Base Link -->
-    <base href="http://192.168.1.104/deltalog/">
+    <base href="http://localhost/deltalog/">
 
     <!-- Favicon -->
     <link rel="icon" href="assets/img/favicon.ico">
@@ -22,159 +22,97 @@
 
 
     <!-- HTML5 Shiv -->
-    <!--[if lt IE 9]><script src="assets/js/vendor/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]-->
 
 </head>
 <body>
-
     <?php
         require 'pages/home.php';
     ?>
 
     <!-- Js -->
-    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/app.js"></script>
 
     <!-- Analytics 
-    <script src="assets/js/lib/app.js"></script>
     <script src="assets/js/vendor/analytics.js"></script>
     -->
 
     <script>
 
-        $('nav a').on('click', function() {
+        var text_input = document.querySelectorAll('form .text');
 
-            page = $(this).attr('data-page')
+        for( var i = 0; i < text_input.length; i++ ) {
 
-            goTo = $(page).position();
-
-            $('html, body').stop().animate({
-                scrollTop: goTo.top
-            },1000)
-
-        })
-
-
-        window.onscroll = function() {
-            var window_top_position = window.pageYOffset,
-                parallax_banner     = document.querySelector('.bgParallax'),
-                header_height       = document.querySelector('header').offsetHeight,
-                nav                 = document.querySelector('nav');
+            text_input[i].addEventListener('blur', function() {
                 
-                // img                 = document.querySelector('h1');
-                // speed = (30 - window_top_position) * 0.1;
-                // img.style.textShadow = '0 '+ speed + 'px 10px #0f0';
+                var content = this.value;
+                
+                content = content.replace(/    /g,' '), //trim four blank spaces
+                content = content.replace(/   /g,' '),  //trim three blank spaces
+                content = content.replace(/  /g,' ');   //trim two blank spaces
 
-            // change parallax banner position
-            parallax_banner.style.backgroundPosition = '50% '+ window_top_position + 'px';
-            
+                this.value = content;
 
-            // set nav position to fixed if window top position pass the banner height
-            if(window_top_position > header_height) {
-                nav.classList.add('fixed')
-            }else {
-                nav.classList.remove('fixed')
-            }
-        };
-
-        var banner_thumbs = document.querySelectorAll('.ctrl > button');
-
-        function changeBanner(elem){
-            var banner      = document.querySelector('#prime-logistics > .banner'),
-                next_image  = elem.getAttribute('data-banner');
-
-            //pass trough banner_thumbs removing 'active' class
-            for (i = 0; i < banner_thumbs.length; i++) {
-                banner_thumbs[i].classList.remove('active')
-            }
-
-            //add 'active' class on clicked button
-            elem.classList.add('active');
-
-            // hide banner
-            banner.style.opacity = "0"
-            
-            // change image
-            banner.setAttribute('data-banner', next_image)
-
-            // show banner
-            banner.style.opacity = "1"
-            
-        }
-
-        // apply changeBanner() on all banner_thumbs 
-        for (i = 0; i < banner_thumbs.length; i++) {
-            banner_thumbs[i].addEventListener('click', function(){
-                changeBanner(this)
-            }, false)
-        }
-
-
-
-
-        // shows hidden nav on responsive mode
-        document.querySelector('nav .button').addEventListener('click', function() {
-            document.querySelector('nav').classList.add('active')
-
-        })
-
-        // hide nav on responsive mode on touch some 'nav > a' element
-        var nav_a = document.querySelectorAll('nav a')
-
-        for (i = 0; i < nav_a.length; i++) {
-            nav_a[i].addEventListener('click', function() {
-                document.querySelector('nav').classList.remove('active')
-            }, false)
-        }
-
-
-    </script>
-
-    <script>//swipe.js
-        document.addEventListener('touchstart', handleTouchStart, false);        
-        document.addEventListener('touchmove', handleTouchMove, false);
-
-        var xDown = null;                                                        
-        var yDown = null;                                                        
-
-        function handleTouchStart(evt) {        
-            xDown = evt.touches[0].clientX;                                      
-            yDown = evt.touches[0].clientY;                                      
-        };                                                
-
-        function handleTouchMove(evt) {
-            if ( ! xDown || ! yDown ) {
-                return;
-            }
-
-            var xUp = evt.touches[0].clientX;                                    
-            var yUp = evt.touches[0].clientY;
-
-            var xDiff = xDown - xUp;
-            var yDiff = yDown - yUp;
-
-            if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-                if ( xDiff > 0 ) {
-                    /* left swipe */ 
-                    document.querySelector('nav').classList.remove('active')
-                    return false
-
+                if ( content != '' ) {
+                    // $(this).next().addClass('fixed')
+                    this.nextElementSibling.classList.add('fixed')
                 } else {
-                    /* right swipe */
-                }                       
-            } else {
-                if ( yDiff > 0 ) {
-                    /* up swipe */ 
-                } else { 
-                    /* down swipe */
-                }                                                                 
-            }
-            /* reset values */
-            xDown = null;
-            yDown = null;                                             
-        };
+                    content == ' ' ? $(this).val('') : $(this).val(content)
+                    $(this).next().removeClass('fixed')
+                }
+
+            });
+
+        }//end for
+
+
+
+
+
+
+
+
+
+        function validate_form() {
+            var submit = document.querySelector('form .submit');
+
+            // submit.addEventListener('click', function(){
+
+                var request = new XMLHttpRequest(),
+                    name    = document.getElementById('name').value,
+                    email   = document.getElementById('email').value,
+                    phone   = document.getElementById('phone').value,
+                    msg     = document.getElementById('msg').value,
+                    data    = "name="+name+"&email="+email+"&phone="+phone+"&msg="+msg;
+
+                submit.innerHTML = '';
+                submit.classList.add('loading');
+                
+                request.open('POST', 'inc/send-contact.php', true);
+                request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+                request.send(data);
+
+                request.onload = function() {
+                    if (request.status >= 200 && request.status < 400) {
+
+                        submit.classList.remove('loading');
+                        submit.classList.add('success');
+                        submit.innerHTML = 'Mesnsgem enviada com sucesso';
+                        // var response = request.responseText; //do another validation with this var
+      
+                    } else {
+                      
+                        submit.classList.remove('loading');
+                        submit.classList.add("error");
+                        submit.innerHTML = 'erro ao enviar mensagem';
+      
+                    }
+                };
+
+            // });
+            
+        }
     </script>
-
-
-
 </body>
 </html>
