@@ -1,19 +1,11 @@
 <?php
     extract($_POST);
     include 'smtp.php';
-
-    /*  ==========================================================================
-        Send Contact Action
-        ==========================================================================  */
-
-    // Config
+    date_default_timezone_set("Brazil/East");
 
     $smtp->host = 'mail.ituinformatica.com'; // smtp.myserver.com
     $smtp->user = 'william@ituinformatica.com'; // myuser@myserver.com
     $smtp->pass = 'wsk8c0r3'; // mypop3password
-
-
-    // Message
 
     $msg = '<table>
                 <tr>
@@ -42,11 +34,11 @@
     // $smtp->send('wscesar@gmail.com', 'testando envio', $msg)
     $success = $smtp->send('wscesar@gmail.com', 'testando envio', $msg);
 
-    if( !$success ) {
-        echo 'ok';
-    }else{
-        echo "error";
-    }
+    // if( !$success ) {
+    //     echo 'ok';
+    // }else{
+    //     echo "error";
+    // }
     
 
 ?>

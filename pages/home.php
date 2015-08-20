@@ -24,19 +24,19 @@
   </div>
   <div class="photos">
     <div class="row_01 wrap">
-      <figure><img src="assets/img/prime_logistics_photo_01.png" width="236" height="236"/>
+      <figure><span class="magnify icons-paper"></span><img src="assets/img/prime_logistics_photo_01.png" width="236" height="236" data-group="logistics"/>
         <figcaption>
           <h3>CIDADES</h3>
           <p>DeltaLog está próximo a <span class="br"></span>grandes centros urbanos.<span class="br"></span>Clique no ícone acima.</p>
         </figcaption>
       </figure>
-      <figure><img src="assets/img/prime_logistics_photo_02.png" width="236" height="236"/>
+      <figure><span class="magnify icons-paper"></span><img src="assets/img/prime_logistics_photo_02.png" width="236" height="236" data-group="logistics"/>
         <figcaption>
           <h3>PORTOS</h3>
           <p>DeltaLog está localizado a poucas horas <span class="br"></span>de um dos principais portos do pais.<span class="br"></span>Clique no ícone acima.</p>
         </figcaption>
       </figure>
-      <figure><img src="assets/img/prime_logistics_photo_03.png" width="236" height="236"/>
+      <figure><span class="magnify icons-paper"></span><img src="assets/img/prime_logistics_photo_03.png" width="236" height="236" data-group="logistics"/>
         <figcaption>
           <h3>AEROPORTOS</h3>
           <p>DeltaLog está localizado apenas alguns <span class="br"></span>minutos do aeroporto internacional.<span class="br"></span>Clique no ícone acima.</p>
@@ -44,13 +44,13 @@
       </figure>
     </div>
     <div class="row_02 wrap">
-      <figure><img src="assets/img/prime_logistics_photo_04.png" width="313" height="155"/>
+      <figure><span data-image="highway-01.jpg" data-number="1" data-group="highway" class="magnify icons-magnifier"></span><img src="assets/img/prime_logistics_photo_04.png" width="313" height="155"/>
         <figcaption>Acesso SP75 - Sorocaba e <span class="br"></span>São Paulo via Castelo Branco</figcaption>
       </figure>
-      <figure><img src="assets/img/prime_logistics_photo_05.png" width="313" height="155"/>
+      <figure><span data-image="highway-02.jpg" data-number="2" data-group="highway" class="magnify icons-magnifier"></span><img src="assets/img/prime_logistics_photo_05.png" width="313" height="155"/>
         <figcaption>Acesso SP75 - Campinas e <span class="br"></span>São Paulo via Bandeirantes</figcaption>
       </figure>
-      <figure><img src="assets/img/prime_logistics_photo_06.png" width="313" height="155"/>
+      <figure><span data-image="highway-03.jpg" data-number="3" data-group="highway" class="magnify icons-magnifier"></span><img src="assets/img/prime_logistics_photo_06.png" width="313" height="155"/>
         <figcaption>Acesso ao deltaLog pelos dois<span class="br"></span>sentidos Campinas e Sorocaba</figcaption>
       </figure>
     </div>
@@ -60,17 +60,17 @@
   <div class="wrap">
     <h2>PROJETO DELTALOG</h2>
     <div class="cols col1"><span class="icon"></span>
-      <figure>
+      <figure><span data-image="infrastructure-01.jpg" data-number="1" data-group="infrastructure" class="magnify icons-magnifier"></span>
         <figcaption>SEGURANÇA <span class="br"></span>24H</figcaption><img src="assets/img/project_photo_01.png" width="236" height="236"/>
       </figure>
     </div>
     <div class="cols col2"><span class="icon"></span>
-      <figure>
+      <figure><span data-image="infrastructure-02.jpg" data-number="2" data-group="infrastructure" class="magnify icons-magnifier"></span>
         <figcaption>ALIMENTAÇÃO<span class="br">/</span>NEGÓCIOS</figcaption><img src="assets/img/project_photo_02.png" width="236" height="236"/>
       </figure>
     </div>
     <div class="cols col3"><span class="icon"></span>
-      <figure>
+      <figure><span data-image="infrastructure-03.jpg" data-number="3" data-group="infrastructure" class="magnify icons-magnifier"></span>
         <figcaption>MOBILIDADE</figcaption><img src="assets/img/project_photo_03.png" width="236" height="236"/>
       </figure>
     </div>

@@ -1,15 +1,3 @@
-+keyframes(rotate_button)
-	0%
-		transform: rotate(0deg)
-	100%
-		transform: rotate(360deg)
-		background-color: none
-
-
-
-/* The element to apply the animation to */
-
-
 section#contact
 	background: $bg-gray
 	padding-top: 97px
@@ -104,17 +92,11 @@ section#contact
 			font-weight: 700
 			+transition(1s)
 
+			&.hide
+				opacity: 0
+
 			&.loading
-				+animation-name(rotate_button)
-				+animation-delay(1s)
-				+animation-duration(1s)
-				+animation-iteration-count(infinite)
-				+animation-timing-function(linear)
-				background-color: none
-				background: url(../img/loading.png) center no-repeat
-				min-width: 44px
-				border-radius: 100%
-				margin-right: 23px
+				background: #282828 url(../img/loading.gif) 52px center no-repeat
 
 			&.success
 				background: #0f0
