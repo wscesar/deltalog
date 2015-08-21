@@ -24,33 +24,33 @@
   </div>
   <div class="photos">
     <div class="row_01 wrap">
-      <figure><span class="magnify icons-paper"></span><img src="assets/img/prime_logistics_photo_01.png" width="236" height="236" data-group="logistics"/>
-        <figcaption>
-          <h3>CIDADES</h3>
-          <p>DeltaLog está próximo a <span class="br"></span>grandes centros urbanos.<span class="br"></span>Clique no ícone acima.</p>
+      <figure><img src="assets/img/prime_logistics_photo_01.png" width="236" height="236" data-group="logistics"/><span data-table="ul.cities" class="icon-paper icons"></span>
+        <figcaption><span class="title">
+            <h3>CIDADES</h3></span>
+          <p>DeltaLog está próximo a grandes centros urbanos.<span class="br"></span><b>Clique no ícone acima.</b></p>
         </figcaption>
       </figure>
-      <figure><span class="magnify icons-paper"></span><img src="assets/img/prime_logistics_photo_02.png" width="236" height="236" data-group="logistics"/>
-        <figcaption>
-          <h3>PORTOS</h3>
-          <p>DeltaLog está localizado a poucas horas <span class="br"></span>de um dos principais portos do pais.<span class="br"></span>Clique no ícone acima.</p>
+      <figure><img src="assets/img/prime_logistics_photo_02.png" width="236" height="236" data-group="logistics"/><span data-table="ul.highways" class="icon-paper icons"></span>
+        <figcaption><span class="title">
+            <h3>RODOVIAS</h3></span>
+          <P>DeltaLog está localizado em local de fácil acesso às principais rodovias do país.<span class="br"></span><b>Clique no ícone acima.</b></P>
         </figcaption>
       </figure>
-      <figure><span class="magnify icons-paper"></span><img src="assets/img/prime_logistics_photo_03.png" width="236" height="236" data-group="logistics"/>
-        <figcaption>
-          <h3>AEROPORTOS</h3>
-          <p>DeltaLog está localizado apenas alguns <span class="br"></span>minutos do aeroporto internacional.<span class="br"></span>Clique no ícone acima.</p>
+      <figure><img src="assets/img/prime_logistics_photo_03.png" width="236" height="236" data-group="logistics"/><span data-table="ul.airports" class="icon-paper icons"></span>
+        <figcaption><span class="title">
+            <h3>PORTOS E AEROPORTOS</h3></span>
+          <P>DeltaLog está localizado apenas alguns minutos do aeroporto internacional e próximo ao principal porto do país.<span class="br"></span><b>Clique no ícone acima.</b></P>
         </figcaption>
       </figure>
     </div>
     <div class="row_02 wrap">
-      <figure><span data-image="highway-01.jpg" data-number="1" data-group="highway" class="magnify icons-magnifier"></span><img src="assets/img/prime_logistics_photo_04.png" width="313" height="155"/>
+      <figure><img src="assets/img/prime_logistics_photo_04.png" width="313" height="155"/><span data-image="highway-01.jpg" data-number="1" data-group="highway" class="icon-magnify icons"></span>
         <figcaption>Acesso SP75 - Sorocaba e <span class="br"></span>São Paulo via Castelo Branco</figcaption>
       </figure>
-      <figure><span data-image="highway-02.jpg" data-number="2" data-group="highway" class="magnify icons-magnifier"></span><img src="assets/img/prime_logistics_photo_05.png" width="313" height="155"/>
+      <figure><img src="assets/img/prime_logistics_photo_05.png" width="313" height="155"/><span data-image="highway-02.jpg" data-number="2" data-group="highway" class="icon-magnify icons"></span>
         <figcaption>Acesso SP75 - Campinas e <span class="br"></span>São Paulo via Bandeirantes</figcaption>
       </figure>
-      <figure><span data-image="highway-03.jpg" data-number="3" data-group="highway" class="magnify icons-magnifier"></span><img src="assets/img/prime_logistics_photo_06.png" width="313" height="155"/>
+      <figure><img src="assets/img/prime_logistics_photo_06.png" width="313" height="155"/><span data-image="highway-03.jpg" data-number="3" data-group="highway" class="icon-magnify icons"></span>
         <figcaption>Acesso ao deltaLog pelos dois<span class="br"></span>sentidos Campinas e Sorocaba</figcaption>
       </figure>
     </div>
@@ -60,18 +60,18 @@
   <div class="wrap">
     <h2>PROJETO DELTALOG</h2>
     <div class="cols col1"><span class="icon"></span>
-      <figure><span data-image="infrastructure-01.jpg" data-number="1" data-group="infrastructure" class="magnify icons-magnifier"></span>
-        <figcaption>SEGURANÇA <span class="br"></span>24H</figcaption><img src="assets/img/project_photo_01.png" width="236" height="236"/>
+      <figure>
+        <figcaption>SEGURANÇA <span class="br"></span>24H</figcaption><img src="assets/img/project_photo_01.png" width="236" height="236"/><span data-image="infrastructure-01.jpg" data-number="1" data-group="infrastructure" class="icon-magnify"></span>
       </figure>
     </div>
     <div class="cols col2"><span class="icon"></span>
-      <figure><span data-image="infrastructure-02.jpg" data-number="2" data-group="infrastructure" class="magnify icons-magnifier"></span>
-        <figcaption>ALIMENTAÇÃO<span class="br">/</span>NEGÓCIOS</figcaption><img src="assets/img/project_photo_02.png" width="236" height="236"/>
+      <figure>
+        <figcaption>ALIMENTAÇÃO<span class="br">/</span>NEGÓCIOS</figcaption><img src="assets/img/project_photo_02.png" width="236" height="236"/><span data-image="infrastructure-02.jpg" data-number="2" data-group="infrastructure" class="icon-magnify"></span>
       </figure>
     </div>
     <div class="cols col3"><span class="icon"></span>
-      <figure><span data-image="infrastructure-03.jpg" data-number="3" data-group="infrastructure" class="magnify icons-magnifier"></span>
-        <figcaption>MOBILIDADE</figcaption><img src="assets/img/project_photo_03.png" width="236" height="236"/>
+      <figure>
+        <figcaption>MOBILIDADE</figcaption><img src="assets/img/project_photo_03.png" width="236" height="236"/><span data-image="infrastructure-03.jpg" data-number="3" data-group="infrastructure" class="icon-magnify"></span>
       </figure>
     </div>
     <div class="description">
@@ -82,45 +82,45 @@
 </section>
 <section id="allotments">
   <div class="wrap">
-    <h2 class="title"><span class="higher">32</span><span class="higher"><span class="lower">LOTES </span><span class="lower">PLANOS</span></span></h2><a role="button"><span class="icons-paper"></span><span class="text v-centered">Clique para visualizar a listagem e metragem dos lotes.</span></a>
+    <h2 class="title"><span class="higher">32</span><span class="higher"><span class="lower">LOTES </span><span class="lower">PLANOS</span></span></h2><a role="button"><span class="icon-paper"></span><span class="text v-centered">Clique para visualizar a listagem e metragem dos lotes.</span></a>
     <div class="row">
-      <figure><img src="assets/img/allotments_photo_01.png" width="311" height="228"/></figure>
-      <figure><img src="assets/img/allotments_photo_02.png" width="311" height="228"/></figure>
-      <figure><img src="assets/img/allotments_photo_03.png" width="311" height="228"/></figure>
+      <figure><img src="assets/img/allotments_photo_01.png" width="311" height="228"/><span data-image="allotments-01.jpg" data-number="1" data-group="allotments" class="icon-magnify"></span></figure>
+      <figure><img src="assets/img/allotments_photo_02.png" width="311" height="228"/><span data-image="allotments-02.jpg" data-number="2" data-group="allotments" class="icon-magnify"></span></figure>
+      <figure><img src="assets/img/allotments_photo_03.png" width="311" height="228"/><span data-image="allotments-03.jpg" data-number="3" data-group="allotments" class="icon-magnify"></span></figure>
       <div class="textbox">
         <p>DeltaLog é um condomínio industrial localizado as margens da SP75 (Rodovia Santos Dumont). Com logística privilegiada o DeltaLog oferece lotes a partir de 1000m2, planos pronto para construir. Toda a infraestrutura como ruas, esgoto e asfato já estão concluídos. DeltaLog é ideal para empresas de pequeno e médio porte que se preocupam com segurança, logística e atendimento. Está localizado na cidade de Salto/SP, entre as cidades de Itu e Indaituba e a poucos quilômetros de Campinas e Sorocaba.</p>
         <p> <b>O condomínio DeltaLog já possuí três projetos de galpão aprovados para construção, </b>agilizando ainda mais o processo de implantação.</p>
       </div>
     </div>
-    <h2 class="subtitle"><span class="bold">MAPA </span>CONDOMÍNIO</h2><a role="button"><span class="icons-paper"></span><span class="text v-centered">Clique para visualizar a listagem e metragem dos lotes.</span></a>
+    <h2 class="subtitle"><span class="bold">MAPA </span>CONDOMÍNIO</h2><a role="button"><span class="icon-paper"></span><span class="text v-centered">Clique para visualizar a listagem e metragem dos lotes.</span></a>
   </div>
 </section>
 <section id="video">
   <div class="wrap">
     <p><span class="big">32 </span><span class="text v-centered"><span class="bold">Lotes planos prontos para construir. </span>Investimento em segurança, logistica e atendimento.</span></p><img src="assets/img/logo.svg" width="266" height="37" class="logo"/>
-    <iframe src="https://www.youtube.com/embed/F4HLrIHdldA" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+    <iframe src="https://localhost/deltalog/assets/img/video.avi" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
   </div>
 </section>
 <section id="contact">
   <div class="wrap"><img src="assets/img/logo.svg" width="266" height="37" class="logo"/>
-    <form onsubmit="validate_form(); return false">
+    <form onsubmit="send_form(); return false">
       <div class="col1">
         <div>
-          <input type="text" id="name" name="name" class="text"/>
+          <input type="text" id="name" name="name" required="required" class="text"/>
           <label for="name">Nome</label>
         </div>
         <div>
-          <input type="email" id="email" name="email" class="text"/>
+          <input type="email" id="email" name="email" required="required" class="text"/>
           <label for="email">Email</label>
         </div>
         <div>
-          <input type="tel" id="phone" name="phone" class="text"/>
+          <input type="tel" id="phone" name="phone" required="required" class="text"/>
           <label for="phone">Telefone</label>
         </div>
       </div>
       <div class="col2">
         <div>
-          <textarea id="msg" name="msg" class="text"></textarea>
+          <textarea id="msg" name="msg" required="required" class="text"></textarea>
           <label for="msg">Mensagem</label>
         </div>
         <div>
@@ -161,3 +161,36 @@
   </div>
   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1833.6879581228386!2d-47.31234857605897!3d-23.19296711407919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1439322190283" frameborder="0" style="border:0" allowfullscreen="allowfullscreen" class="map"></iframe>
 </footer>
+<div class="modal background"></div>
+<div class="modal banner">
+  <figure><span class="ctrl left"></span><span class="ctrl right"></span><img/>
+    <figcaption></figcaption>
+  </figure>
+</div>
+<div class="modal table">
+  <ul class="cities">
+    <li class="title">DISTÂNCIAS DE CIDADES</li>
+    <li><span>Campinas									</span>29km</li>
+    <li><span>Sorocaba									</span>41km</li>
+    <li><span>Jundiaí										</span>60km</li>
+    <li><span>Piracicaba									</span>99km</li>
+    <li><span>São Paulo									</span>105km</li>
+    <li><span>Santos										</span>188km</li>
+  </ul>
+  <ul class="highways">
+    <li class="title">DISTÂNCIA DE RODOVIAS</li>
+    <li> <span>Rod. dos Bandeirantes (Campinas)			</span>35km</li>
+    <li> <span>Rod. Castelo Branco (Sorocaba)			</span>26km</li>
+    <li> <span>Rod. Anhanguera (Campinas)				</span>45km</li>
+    <li> <span>Rodoanel									</span>100km</li>
+    <li> <span>Marginal Tietê							</span>102km</li>
+    <li> <span>Marginal Pinheiros						</span>109km</li>
+  </ul>
+  <ul class="airports">
+    <li class="title"> DISTÂNCIA DE PORTOS E AEROPORTOS</li>
+    <li><span>Viracopos (Campinas)						</span>27km</li>
+    <li><span>Congonhas (São Paulo)						</span>109km</li>
+    <li><span>Guarulhos									</span>126km</li>
+    <li><span>Porto de Santos								</span>192Km</li>
+  </ul>
+</div>

@@ -92,7 +92,7 @@ section#prime-logistics
 			display: inline-block
 			vertical-align: top
 
-			.magnify
+			.icons
 				cursor: pointer
 				display: block
 				height: 58px
@@ -106,9 +106,6 @@ section#prime-logistics
 				width: 100%
 				height: auto
 
-			figcaption h3
-				font-size: 37.39px
-				margin: 60px auto 23px
 
 		.row_01 figure
 			width: 236px
@@ -121,14 +118,33 @@ section#prime-logistics
 				overflow: hidden
 
 			figcaption
-				width: 120%
-				margin: 0 auto 0 50%
-				+transform(translateX(-50%))
+				width: 100%
+
+				.title
+					height: 67px
+					display: block
+					margin: 60px auto 23px
+
+					h3
+						font-size: 37.39px
+						position: absolute
+						text-align: center
+						top: 50%
+						width: 100%
+						+transform(translateY(-50%))
+
+				p
+					padding: 0 5%
+
+					b
+						display: block
+						margin-top: 5px
+
 
 			&:nth-child(2)
 				margin: 0 128px
 
-			.magnify
+			.icon-paper
 				top: 207px
 
 		.row_02 
@@ -144,5 +160,5 @@ section#prime-logistics
 				&:nth-child(2)
 					margin: 0 8px
 
-				.magnify
+				.icon-magnify
 					top: 127px
