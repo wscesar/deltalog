@@ -132,7 +132,7 @@
 </section>
 <footer>
   <div class="wrap">
-    <div class="col"><span class="icons-location"></span>
+    <div class="col"><span class="icon-location"></span>
       <div class="text">
         <p class="bold">Condomínio Industrial DeltaLog</p>
         <p>Rua Suiça, 1303 / Jd. Sontag</p>
@@ -140,7 +140,7 @@
         <p>Salto/SP</p>
       </div>
     </div>
-    <div class="col"><span class="icons-mail"></span>
+    <div class="col"><span class="icon-mail"></span>
       <div class="text">
         <p>Vendas / Informações:</p>
         <p class="bold margin">Imobiliária Mais Consultoria</p>
@@ -149,7 +149,7 @@
         <p>atendimento@imobiliariasalto.com.br</p>
       </div>
     </div>
-    <div class="col"><span class="icons-phone"></span>
+    <div class="col"><span class="icon-phone"></span>
       <div class="text">
         <p>Contato vendas/Informações:</p>
         <p class="bold margin">Imobiliária Mais Consultoria</p>
