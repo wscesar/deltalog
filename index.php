@@ -150,14 +150,14 @@
         =            Magnify Images On a Modal Banner            =
         ========================================================*/
         
-        $('.icon-magnify').on('click', function() {
-            var img     = this.getAttribute('data-image'),
-                group   = this.getAttribute('data-group'),
-                number  = this.getAttribute('data-number'),
+        $('.icon-magnify, .icon-magnify + img').on('click', function() {
+            var img     = this.parentNode.getAttribute('data-image'),
+                group   = this.parentNode.getAttribute('data-group'),
+                number  = this.parentNode.getAttribute('data-number'),
                 content = document.querySelector('.modal figure img'),
                 modal_banner    = document.querySelector('.modal.banner'),
                 modal_backgrund = document.querySelector('.modal.background');
-            
+
             modal_banner.style.display = 'block';
             modal_backgrund.style.display = 'block';
 
@@ -181,7 +181,7 @@
         
         $('.icon-paper').on('click', function() {
 
-            var table           = this.getAttribute('data-table'),
+            var table           = this.parentNode.getAttribute('data-table'),
                 table           = document.querySelector(table),
                 tables          = document.querySelectorAll('.modal ul'),
                 modal_table     = document.querySelector('.modal.table'),

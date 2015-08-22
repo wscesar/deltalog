@@ -24,19 +24,19 @@
   </div>
   <div class="photos">
     <div class="row_01 wrap">
-      <figure><img src="assets/img/prime_logistics_photo_01.png" width="236" height="236" data-group="logistics"/><span data-table="ul.cities" class="icon-paper icons"></span>
+      <figure data-table="ul.cities"><span class="icons icon-paper"></span><img src="assets/img/prime_logistics_photo_01.png" data-group="logistics"/>
         <figcaption><span class="title">
             <h3>CIDADES</h3></span>
           <p>DeltaLog está próximo a grandes centros urbanos.<span class="br"></span><b>Clique no ícone acima.</b></p>
         </figcaption>
       </figure>
-      <figure><img src="assets/img/prime_logistics_photo_02.png" width="236" height="236" data-group="logistics"/><span data-table="ul.highways" class="icon-paper icons"></span>
+      <figure data-table="ul.highways"><span class="icons icon-paper"></span><img src="assets/img/prime_logistics_photo_02.png" data-group="logistics"/>
         <figcaption><span class="title">
             <h3>RODOVIAS</h3></span>
           <P>DeltaLog está localizado em local de fácil acesso às principais rodovias do país.<span class="br"></span><b>Clique no ícone acima.</b></P>
         </figcaption>
       </figure>
-      <figure><img src="assets/img/prime_logistics_photo_03.png" width="236" height="236" data-group="logistics"/><span data-table="ul.airports" class="icon-paper icons"></span>
+      <figure data-table="ul.airports"><span class="icons icon-paper"></span><img src="assets/img/prime_logistics_photo_03.png" data-group="logistics"/>
         <figcaption><span class="title">
             <h3>PORTOS E AEROPORTOS</h3></span>
           <P>DeltaLog está localizado apenas alguns minutos do aeroporto internacional e próximo ao principal porto do país.<span class="br"></span><b>Clique no ícone acima.</b></P>
@@ -44,13 +44,13 @@
       </figure>
     </div>
     <div class="row_02 wrap">
-      <figure><img src="assets/img/prime_logistics_photo_04.png" width="313" height="155"/><span data-image="highway-01.jpg" data-number="1" data-group="highway" class="icon-magnify icons"></span>
+      <figure data-image="highway-01.jpg" data-number="1" data-group="highway"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_04.png"/>
         <figcaption>Acesso SP75 - Sorocaba e <span class="br"></span>São Paulo via Castelo Branco</figcaption>
       </figure>
-      <figure><img src="assets/img/prime_logistics_photo_05.png" width="313" height="155"/><span data-image="highway-02.jpg" data-number="2" data-group="highway" class="icon-magnify icons"></span>
+      <figure data-image="highway-02.jpg" data-number="2" data-group="highway"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_05.png"/>
         <figcaption>Acesso SP75 - Campinas e <span class="br"></span>São Paulo via Bandeirantes</figcaption>
       </figure>
-      <figure><img src="assets/img/prime_logistics_photo_06.png" width="313" height="155"/><span data-image="highway-03.jpg" data-number="3" data-group="highway" class="icon-magnify icons"></span>
+      <figure data-image="highway-03.jpg" data-number="3" data-group="highway"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_06.png"/>
         <figcaption>Acesso ao deltaLog pelos dois<span class="br"></span>sentidos Campinas e Sorocaba</figcaption>
       </figure>
     </div>
@@ -59,19 +59,19 @@
 <section id="project">
   <div class="wrap">
     <h2>PROJETO DELTALOG</h2>
-    <div class="cols col1"><span class="icon"></span>
-      <figure>
-        <figcaption>SEGURANÇA <span class="br"></span>24H</figcaption><img src="assets/img/project_photo_01.png" width="236" height="236"/><span data-image="infrastructure-01.jpg" data-number="1" data-group="infrastructure" class="icon-magnify"></span>
+    <div class="cols col1"><span class="icon icon-shield"></span>
+      <figure data-image="infrastructure-01.jpg" data-number="1" data-group="infrastructure">
+        <figcaption>SEGURANÇA <span class="br"></span>24H</figcaption><span class="icon-magnify"></span><img src="assets/img/project_photo_01.png" width="236" height="236"/>
       </figure>
     </div>
-    <div class="cols col2"><span class="icon"></span>
-      <figure>
-        <figcaption>ALIMENTAÇÃO<span class="br">/</span>NEGÓCIOS</figcaption><img src="assets/img/project_photo_02.png" width="236" height="236"/><span data-image="infrastructure-02.jpg" data-number="2" data-group="infrastructure" class="icon-magnify"></span>
+    <div class="cols col2"><span class="icon icon-dish"></span>
+      <figure data-image="infrastructure-02.jpg" data-number="2" data-group="infrastructure">
+        <figcaption>ALIMENTAÇÃO<span class="br">/</span>NEGÓCIOS</figcaption><span class="icon-magnify"></span><img src="assets/img/project_photo_02.png" width="236" height="236"/>
       </figure>
     </div>
-    <div class="cols col3"><span class="icon"></span>
-      <figure>
-        <figcaption>MOBILIDADE</figcaption><img src="assets/img/project_photo_03.png" width="236" height="236"/><span data-image="infrastructure-03.jpg" data-number="3" data-group="infrastructure" class="icon-magnify"></span>
+    <div class="cols col3"><span class="icon icon-truck"></span>
+      <figure data-image="infrastructure-03.jpg" data-number="3" data-group="infrastructure">
+        <figcaption>MOBILIDADE</figcaption><span class="icon-magnify"></span><img src="assets/img/project_photo_03.png" width="236" height="236"/>
       </figure>
     </div>
     <div class="description">
@@ -84,15 +84,15 @@
   <div class="wrap">
     <h2 class="title"><span class="higher">32</span><span class="higher"><span class="lower">LOTES </span><span class="lower">PLANOS</span></span></h2><a role="button"><span class="icon-paper"></span><span class="text v-centered">Clique para visualizar a listagem e metragem dos lotes.</span></a>
     <div class="row">
-      <figure><img src="assets/img/allotments_photo_01.png" width="311" height="228"/><span data-image="allotments-01.jpg" data-number="1" data-group="allotments" class="icon-magnify"></span></figure>
-      <figure><img src="assets/img/allotments_photo_02.png" width="311" height="228"/><span data-image="allotments-02.jpg" data-number="2" data-group="allotments" class="icon-magnify"></span></figure>
-      <figure><img src="assets/img/allotments_photo_03.png" width="311" height="228"/><span data-image="allotments-03.jpg" data-number="3" data-group="allotments" class="icon-magnify"></span></figure>
+      <figure><span data-image="allotments-01.jpg" data-number="1" data-group="allotments" class="icon-magnify"></span><img src="assets/img/allotments_photo_01.png" width="311" height="228"/></figure>
+      <figure><span data-image="allotments-02.jpg" data-number="2" data-group="allotments" class="icon-magnify"></span><img src="assets/img/allotments_photo_02.png" width="311" height="228"/></figure>
+      <figure><span data-image="allotments-03.jpg" data-number="3" data-group="allotments" class="icon-magnify"></span><img src="assets/img/allotments_photo_03.png" width="311" height="228"/></figure>
       <div class="textbox">
         <p>DeltaLog é um condomínio industrial localizado as margens da SP75 (Rodovia Santos Dumont). Com logística privilegiada o DeltaLog oferece lotes a partir de 1000m2, planos pronto para construir. Toda a infraestrutura como ruas, esgoto e asfato já estão concluídos. DeltaLog é ideal para empresas de pequeno e médio porte que se preocupam com segurança, logística e atendimento. Está localizado na cidade de Salto/SP, entre as cidades de Itu e Indaituba e a poucos quilômetros de Campinas e Sorocaba.</p>
         <p> <b>O condomínio DeltaLog já possuí três projetos de galpão aprovados para construção, </b>agilizando ainda mais o processo de implantação.</p>
       </div>
     </div>
-    <h2 class="subtitle"><span class="bold">MAPA </span>CONDOMÍNIO</h2><a role="button"><span class="icon-paper"></span><span class="text v-centered">Clique para visualizar a listagem e metragem dos lotes.</span></a>
+    <h2 class="subtitle"><span class="bold">MAPA </span>CONDOMÍNIO</h2>
   </div>
 </section>
 <section id="video">
