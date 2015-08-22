@@ -25,14 +25,14 @@
                 </tr>
 
                 <tr>
-                    <td><font face="Arial" color="#505050">'.date('d/m/Y - h:i').'</font></td>
+                    <td><font face="Arial" color="#505050">'.date('d/m/Y - H:i').'</font></td>
                 </tr>
             </table>';
 
 
     // Send
     // $smtp->send('wscesar@gmail.com', 'testando envio', $msg)
-    $success = $smtp->send('wscesar@gmail.com', 'testando envio', $msg);
+    $success = $smtp->send('wscesar@gmail.com', 'Mensagem Enviada Por: '.strtoupper($name), $msg);
 
     // if( !$success ) {
     //     echo 'ok';

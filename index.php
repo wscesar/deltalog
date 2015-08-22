@@ -179,7 +179,7 @@
         =            Show Data Table            =
         =======================================*/
         
-        $('.icon-paper').on('click', function() {
+        $('.icon-paper, .icon-paper + img' ).on('click', function() {
 
             var table           = this.parentNode.getAttribute('data-table'),
                 table           = document.querySelector(table),

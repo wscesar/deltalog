@@ -84,9 +84,9 @@
   <div class="wrap">
     <h2 class="title"><span class="higher">32</span><span class="higher"><span class="lower">LOTES </span><span class="lower">PLANOS</span></span></h2><a role="button"><span class="icon-paper"></span><span class="text v-centered">Clique para visualizar a listagem e metragem dos lotes.</span></a>
     <div class="row">
-      <figure><span data-image="allotments-01.jpg" data-number="1" data-group="allotments" class="icon-magnify"></span><img src="assets/img/allotments_photo_01.png" width="311" height="228"/></figure>
-      <figure><span data-image="allotments-02.jpg" data-number="2" data-group="allotments" class="icon-magnify"></span><img src="assets/img/allotments_photo_02.png" width="311" height="228"/></figure>
-      <figure><span data-image="allotments-03.jpg" data-number="3" data-group="allotments" class="icon-magnify"></span><img src="assets/img/allotments_photo_03.png" width="311" height="228"/></figure>
+      <figure data-image="allotments-01.jpg" data-number="1" data-group="allotments"><span class="icon-magnify"></span><img src="assets/img/allotments_photo_01.png" width="311" height="228"/></figure>
+      <figure data-image="allotments-02.jpg" data-number="2" data-group="allotments"><span class="icon-magnify"></span><img src="assets/img/allotments_photo_02.png" width="311" height="228"/></figure>
+      <figure data-image="allotments-03.jpg" data-number="3" data-group="allotments"><span class="icon-magnify"></span><img src="assets/img/allotments_photo_03.png" width="311" height="228"/></figure>
       <div class="textbox">
         <p>DeltaLog é um condomínio industrial localizado as margens da SP75 (Rodovia Santos Dumont). Com logística privilegiada o DeltaLog oferece lotes a partir de 1000m2, planos pronto para construir. Toda a infraestrutura como ruas, esgoto e asfato já estão concluídos. DeltaLog é ideal para empresas de pequeno e médio porte que se preocupam com segurança, logística e atendimento. Está localizado na cidade de Salto/SP, entre as cidades de Itu e Indaituba e a poucos quilômetros de Campinas e Sorocaba.</p>
         <p> <b>O condomínio DeltaLog já possuí três projetos de galpão aprovados para construção, </b>agilizando ainda mais o processo de implantação.</p>
