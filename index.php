@@ -50,7 +50,7 @@
 
         for( var i = 0; i < text_input.length; i++ ) {
 
-            text_input[i].addEventListener('blur', function() {
+            text_input[i].addEventListener('blur', function validate_input() {
                 
                 var content = this.value;
                 
@@ -84,64 +84,71 @@
         ==============================================*/
         
         function send_form() {
-                var request = new XMLHttpRequest(),
-                    submit  = document.querySelector('form .submit');
-                    name    = document.getElementById('name').value,
-                    email   = document.getElementById('email').value,
-                    phone   = document.getElementById('phone').value,
-                    msg     = document.getElementById('msg').value,
-                    data    = 'name='+name+'&email='+email+'&phone='+phone+'&msg='+msg;
+            var request = new XMLHttpRequest(),
+                submit  = document.querySelector('form .submit');
+                name    = document.getElementById('name').value,
+                email   = document.getElementById('email').value,
+                phone   = document.getElementById('phone').value,
+                msg     = document.getElementById('msg').value,
+                data    = 'name='+name+'&email='+email+'&phone='+phone+'&msg='+msg;
+            
+            
+            split_email = email.split('@');
+
+            email_user      = split_email[0]
+            email_provider  = split_email[1].split('.')[0]
+            email_domain    = split_email[1].split('.')[1]
+
+            // email_country   = split_email[1].split('.')[2]
+            // email_country != '' ? email_country = email_country : email = 'us'
+
+            submit.setAttribute('disabled','true');
+            submit.innerHTML = '';
+            submit.classList.add('hide');
+            submit.classList.add('loading');
+            submit.classList.remove('hide');
+             
+            request.open('POST', 'inc/send-contact.php', true);
+            request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+            request.send(data);
+
+            request.onload = function() {
                 
-                
-                split_email = email.split('@');
+                if (request.status >= 200 && request.status < 400) {
 
-                email_user      = split_email[0]
-                email_provider  = split_email[1].split('.')[0]
-                email_domain    = split_email[1].split('.')[1]
+                    submit.classList.add('hide');
+                    submit.classList.add('success');
+                    submit.innerHTML = 'Mensagem enviada com sucesso';
+                    submit.classList.remove('loading');
+                    submit.classList.remove('hide');
+                    // var response = request.responseText; //do another validation with this var
+    
+                } else {
 
-                // email_country   = split_email[1].split('.')[2]
-                // email_country != '' ? email_country = email_country : email = 'us'
-
-                submit.setAttribute('disabled','true');
-                submit.innerHTML = '';
-                submit.classList.add('hide');
-                submit.classList.add('loading');
-                submit.classList.remove('hide');
-                 
-                request.open('POST', 'inc/send-contact.php', true);
-                request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-                request.send(data);
-
-                request.onload = function() {
-                    
-                    if (request.status >= 200 && request.status < 400) {
-
-                        var inputs = document.querySelectorAll('form .text, form .label')
-
-                        inputs[0].style.display = 'none'
-                        inputs[1].style.display = 'none'
-                        inputs[2].style.display = 'none'
-                        inputs[3].style.display = 'none'
-
-                        submit.classList.add('hide');
-                        submit.classList.add('success');
-                        submit.innerHTML = 'Mesnsgem enviada com sucesso';
-                        submit.classList.remove('loading');
-                        submit.classList.remove('hide');
-                        var response = request.responseText; //do another validation with this var
-        
-                    } else {
-
-                        submit.classList.add('hide');
-                        submit.classList.remove('loading');
-                        submit.classList.add('error');
-                        submit.innerHTML = 'erro ao enviar mensagem';
-                        submit.classList.remove('hide');
-        
-                    }
-                };
+                    submit.classList.add('hide');
+                    submit.classList.remove('loading');
+                    submit.classList.add('error');
+                    submit.innerHTML = 'erro ao enviar mensagem';
+                    submit.classList.remove('hide');
+    
+                }
+            };
         }
 
+        function egoi() {
+            var request = new XMLHttpRequest(),
+                cliente = "133248",
+                lang    = "br",
+                lista   = "3",
+                formid  = "3",
+                name    = document.getElementById('name').value,
+                email   = document.getElementById('email').value,
+                data    = 'fname_5='+name+'&email_6='+email+'&lista='+lista+'&cliente='+cliente+'&lang='+lang+'&formid='+formid;
+             
+            request.open('POST', 'http://88.kmitd1.com/w/3e3eC0Oe1jSWwRnvgec151ac01', true);
+            request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+            request.send(data);
+        }
 
 
 
@@ -210,9 +217,9 @@
         ===============================================================*/
 
         document.querySelector('.modal .right').addEventListener('click', function() {
-            var img = document.querySelector('.modal img'),
-                group = img.getAttribute('data-group'),
-                next = img.getAttribute('data-number');
+            var img     = document.querySelector('.modal img'),
+                group   = img.getAttribute('data-group'),
+                next    = img.getAttribute('data-number');
 
             next = parseInt(next) + 1;
             next > 3 ? next = 1 : next = next;
@@ -276,6 +283,79 @@
 
 
         });
+
+
+
+    </script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<script>
+
+    var map_icon = 'assets/img/map_logo.png';
+    var map_center = new google.maps.LatLng(-23.2854682,-47.2930973);
+    var map_icon_position = new google.maps.LatLng(-23.2854682,-47.2930973);
+
+    function initialize() {
+        // var map_center = new google.maps.LatLng(-8.0631495, -34.87131120000004);
+        var styles = [
+            {
+                stylers: [
+                    { saturation: -100 }
+                ]
+            },{
+                featureType: 'road',
+                elementType: 'geometry',
+                stylers: [
+                    { lightness: 10 },
+                    { visibility: 'simplified' }
+                ]
+            },{
+                featureType: 'road',
+                elementType: 'labels',
+                stylers: [
+                    { visibility: 'off' }
+                ]
+            }
+        ];
+
+        var styledMap = new google.maps.StyledMapType(styles, { name: 'Styled Map' });
+
+
+       var mapOptions = {
+           center: map_center,
+           disableDefaultUI: true,
+           zoomControl: true,
+           streetViewControl: true,
+           zoom: 15,
+           scrollwheel: false,
+           navigationControl: false,
+           mapTypeControl: false,
+           scaleControl: false,
+           mapTypeId: google.maps.MapTypeId.MAP
+       };
+
+       var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+       map.mapTypes.set('mapStyle', styledMap);
+       map.setMapTypeId('mapStyle');
+       
+       // opções do marcador
+       var marker = new google.maps.Marker({
+          position: map_icon_position,
+          map: map,
+          title:"Deltalog",
+          icon: map_icon,
+          animation: google.maps.Animation.DROP
+      });
+
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+    <script>
 
 
 

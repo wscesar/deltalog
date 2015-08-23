@@ -5,7 +5,7 @@
   </div>
 </header>
 <nav>
-  <div class="wrap"><a data-page="#prime-logistics"><span>LOGÍSTICA PRIVILEGIADA</span></a><a data-page="#project"><span>PROJETO</span></a><a data-page="#allotments"><span>LOTES</span></a><a data-page="#video"><span>VIDEO APRESENTAÇÃO</span></a><a data-page="#contact"><span>CONTATO/VENDAS</span></a><span class="button"> <span class="stripe"></span><span class="stripe"></span><span class="stripe"></span></span></div>
+  <div class="wrap"><a data-section="#prime-logistics"><span>LOGÍSTICA PRIVILEGIADA</span></a><a data-section="#project"><span>PROJETO</span></a><a data-section="#allotments"><span>LOTES</span></a><a data-section="#video"><span>VIDEO APRESENTAÇÃO</span></a><a data-section="#contact"><span>CONTATO/VENDAS</span></a><span class="button"> <span class="stripe"></span><span class="stripe"></span><span class="stripe"></span></span></div>
 </nav>
 <section id="prime-logistics">
   <h2 class="title">INFRAESTRUTURA COMPLETA <span class="br"> </span>LOTES INDUSTRIAIS A PARTIR DE <b>1000m<sup>2</sup></b></h2>
@@ -103,7 +103,7 @@
 </section>
 <section id="contact">
   <div class="wrap"><img src="assets/img/logo.svg" width="266" height="37" class="logo"/>
-    <form onsubmit="send_form(); return false">
+    <form onsubmit="egoi(); send_form();  return false">
       <div class="col1">
         <div>
           <input type="text" id="name" name="name" required="required" class="text"/>
@@ -159,8 +159,8 @@
       </div>
     </div>
   </div>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1833.6879581228386!2d-47.31234857605897!3d-23.19296711407919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1439322190283" frameborder="0" style="border:0" allowfullscreen="allowfullscreen" class="map"></iframe>
 </footer>
+<div id="map-canvas" class="map"></div>
 <div class="modal background"></div>
 <div class="modal banner">
   <figure><span class="ctrl left"></span><span class="ctrl right"></span><img/>
