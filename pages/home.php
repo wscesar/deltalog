@@ -1,7 +1,7 @@
 
 <header>
-  <div class="wrap"><img src="assets/img/logo.svg" width="416" height="58" class="logo"/>
-    <h1>CONDOMÍNIO INDUSTRIAL COM LOGISTICA ESTRATÉGICA</h1>
+  <div class="wrap"><img src="assets/img/logo.svg" width="545" height="76" class="logo"/>
+    <h1>CONDOMÍNIO INDUSTRIAL COM <b>LOGISTICA ESTRATÉGICA</b></h1>
   </div>
 </header>
 <nav>
@@ -11,9 +11,9 @@
   <h2 class="title">INFRAESTRUTURA COMPLETA <span class="br"> </span>LOTES INDUSTRIAIS A PARTIR DE <b>1000m<sup>2</sup></b></h2>
   <div data-banner="1" class="banner">
     <div class="ctrl">
-      <button data-banner="1" class="active"></button>
-      <button data-banner="2"></button>
-      <button data-banner="3"></button>
+      <button data-banner="1" id="thumb01" class="active"></button>
+      <button data-banner="2" id="thumb02"></button>
+      <button data-banner="3" id="thumb03"></button>
     </div>
   </div>
   <div class="strategic_location">
@@ -33,25 +33,25 @@
       <figure data-table="ul.highways"><span class="icons icon-paper"></span><img src="assets/img/prime_logistics_photo_02.png" data-group="logistics"/>
         <figcaption><span class="title">
             <h3>RODOVIAS</h3></span>
-          <P>DeltaLog está localizado em local de fácil acesso às principais rodovias do país.<span class="br"></span><b>Clique no ícone acima.</b></P>
+          <p>Fácil acesso as principais rodovias do país.<span class="br"></span><b>Clique no ícone acima.</b></p>
         </figcaption>
       </figure>
       <figure data-table="ul.airports"><span class="icons icon-paper"></span><img src="assets/img/prime_logistics_photo_03.png" data-group="logistics"/>
         <figcaption><span class="title">
-            <h3>PORTOS E AEROPORTOS</h3></span>
-          <P>DeltaLog está localizado apenas alguns minutos do aeroporto internacional e próximo ao principal porto do país.<span class="br"></span><b>Clique no ícone acima.</b></P>
+            <h3>OUTROS</h3></span>
+          <p>Próximo a aeroportos e ao principal porto do estado. <span class="br"></span><b>Clique no ícone acima.</b></p>
         </figcaption>
       </figure>
     </div>
     <div class="row_02 wrap">
       <figure data-image="highway-01.jpg" data-number="1" data-group="highway"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_04.png"/>
-        <figcaption>Acesso SP75 - Sorocaba e <span class="br"></span>São Paulo via Castelo Branco</figcaption>
+        <figcaption>Fácil Acesso a SP75 - Sorocaba e <span class="br"></span>São Paulo via Castelo Branco</figcaption>
       </figure>
       <figure data-image="highway-02.jpg" data-number="2" data-group="highway"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_05.png"/>
-        <figcaption>Acesso SP75 - Campinas e <span class="br"></span>São Paulo via Bandeirantes</figcaption>
+        <figcaption>Fácil Acesso a SP75 - Campinas e <span class="br"></span>São Paulo via Bandeirantes</figcaption>
       </figure>
       <figure data-image="highway-03.jpg" data-number="3" data-group="highway"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_06.png"/>
-        <figcaption>Acesso ao deltaLog pelos dois<span class="br"></span>sentidos Campinas e Sorocaba</figcaption>
+        <figcaption>Fácil Acesso ao DeltaLog pelos dois<span class="br"></span>sentidos Campinas e Sorocaba</figcaption>
       </figure>
     </div>
   </div>
@@ -75,21 +75,20 @@
       </figure>
     </div>
     <div class="description">
-      <p>DeltaLog é um condomínio industrial composto por 32 lotes com metragem a partir de 1000m2. Porém o que mais chama a atenção no projeto além da logística privilegiada, são os diferenciais. DeltaLog é um condomínio fechado com portaria e <b>vigilância 24 horas. </b>Toda a entrada ou saída de veículos é monitorado, proporcionando segurança total. DeltaLog conta ainda com um espaço moderno de alimentação onde será instalado um <b>restaurante para servir refeições à colaboradores e empresários. </b>No mesmo prédio serão construídas salas de reuniões, para que as empresas possam atender clientes e fornecedores com tranquilidade e conforto.</p>
-      <p>Mobilidade, a rua principal do condomínio foi planejada para <b>facilitar a manobra de carga e descarga por caminhões.</b></p>
+      <p>Deltalog é o primeiro condomínio Industrial fechado de Salto dotado de infra-estrutura completa, com rede municipal de água e esgoto, energia elétrica pronta (carga mínima) para instalação da sua indústria. São lotes a partir de 1000m2. Além da losgistica privilegiada o que chama a atenção no projeto são os diferenciais. DeltaLog é um condomínio fechado com portaria e vigilância 24 horas. Toda a entrada ou saída de veículos é monitorado, proporcionando segurança total. DeltaLog conta ainda com um espaço moderno de alimentação onde será instalado o refeitório para servir colaboradores e empresários. No mesmo prédio terá disponível espaço para reuniões ou treinamentos, para que as empresas possam atender clientes, colaboradores e fornecedores com tranquilidade e conforto. A rua principal do condomínio foi planejada para facilitar a manobra de carga e descarga por caminhões, oferecendo total mobilidade.</p>
     </div>
   </div>
 </section>
 <section id="allotments">
   <div class="wrap">
-    <h2 class="title"><span class="higher">32</span><span class="higher"><span class="lower">LOTES </span><span class="lower">PLANOS</span></span></h2><a role="button"><span class="icon-paper"></span><span class="text v-centered">Clique para visualizar a listagem e metragem dos lotes.</span></a>
+    <h2 class="title">LOTES <span class="bold">PLANOS</span></h2><a role="button"><span class="icon-paper"></span><span class="text v-centered">PARA RECEBER INFORMAÇÕES COMPLETAS CLIQUE AQUI.</span></a>
     <div class="row">
       <figure data-image="allotments-01.jpg" data-number="1" data-group="allotments"><span class="icon-magnify"></span><img src="assets/img/allotments_photo_01.png" width="311" height="228"/></figure>
       <figure data-image="allotments-02.jpg" data-number="2" data-group="allotments"><span class="icon-magnify"></span><img src="assets/img/allotments_photo_02.png" width="311" height="228"/></figure>
       <figure data-image="allotments-03.jpg" data-number="3" data-group="allotments"><span class="icon-magnify"></span><img src="assets/img/allotments_photo_03.png" width="311" height="228"/></figure>
       <div class="textbox">
-        <p>DeltaLog é um condomínio industrial localizado as margens da SP75 (Rodovia Santos Dumont). Com logística privilegiada o DeltaLog oferece lotes a partir de 1000m2, planos pronto para construir. Toda a infraestrutura como ruas, esgoto e asfato já estão concluídos. DeltaLog é ideal para empresas de pequeno e médio porte que se preocupam com segurança, logística e atendimento. Está localizado na cidade de Salto/SP, entre as cidades de Itu e Indaituba e a poucos quilômetros de Campinas e Sorocaba.</p>
-        <p> <b>O condomínio DeltaLog já possuí três projetos de galpão aprovados para construção, </b>agilizando ainda mais o processo de implantação.</p>
+        <p>DeltaLog é um condomínio industrial localizado as margens da SP75 (Rodovia Santos Dumont). Com logística privilegiada o DeltaLog oferece lotes a partir de 1000m2, planos pronto para construir. Toda a infraestrutura como ruas, esgoto e asfato já está  concluída. DeltaLog é ideal para empresas de pequeno e médio porte que se preocupam com segurança, logística e atendimento. Está localizado na cidade de Salto/SP, entre as cidades de Itu e Indaituba e a poucos quilômetros de Campinas e Sorocaba.</p>
+        <p>O condomínio DeltaLog possuí projetos de galpão aprovados para construção, agilizando ainda mais o processo de implantação.</p>
       </div>
     </div>
     <h2 class="subtitle"><span class="bold">MAPA </span>CONDOMÍNIO</h2>
@@ -97,13 +96,13 @@
 </section>
 <section id="video">
   <div class="wrap">
-    <p><span class="big">32 </span><span class="text v-centered"><span class="bold">Lotes planos prontos para construir. </span>Investimento em segurança, logistica e atendimento.</span></p><img src="assets/img/logo.svg" width="266" height="37" class="logo"/>
+    <p><span class="bold">Lotes planos prontos para construir. </span>Investimento em segurança, logistica e atendimento.</p><img src="assets/img/logo.svg" width="266" height="37" class="logo"/>
     <iframe src="https://localhost/deltalog/assets/img/video.avi" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
   </div>
 </section>
 <section id="contact">
   <div class="wrap"><img src="assets/img/logo.svg" width="266" height="37" class="logo"/>
-    <form onsubmit="egoi(); send_form();  return false">
+    <form onsubmit="send_form();  return false">
       <div class="col1">
         <div>
           <input type="text" id="name" name="name" required="required" class="text"/>
@@ -134,10 +133,10 @@
   <div class="wrap">
     <div class="col"><span class="icon-location"></span>
       <div class="text">
-        <p class="bold">Condomínio Industrial DeltaLog</p>
-        <p>Rua Suiça, 1303 / Jd. Sontag</p>
-        <p>Margem da SP75</p>
-        <p>Salto/SP</p>
+        <p class="bold">DeltaLog Investimentos Imobiliários</p>
+        <p>Rua Batalha do Tuiuti, s/nº</p>
+        <p>Bairro Lageado</p>
+        <p>Complemento: Km 42,2 / SP 75</p>
       </div>
     </div>
     <div class="col"><span class="icon-mail"></span>

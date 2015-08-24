@@ -3,11 +3,12 @@
 @import "../img/icon/*.png"
 @include all-icon-sprites
 
-$light-blue: #1cb3e2
-$dark-blue: #19a8f9
+$blue: #19a8f9
+$gray: #282828
 $green: #96ca2d
-$bg-gray: #282828
+$white: #fbfbfb
 $bg-blue: #00587c
+// $light-blu: #1cb3e2
 
 *
     border: 0
@@ -21,14 +22,15 @@ $bg-blue: #00587c
     z-index: 1
 
 ::-moz-selection
-    background: $dark-blue
+    background: $blue
     color: #fff
 
 ::selection
-    background: $dark-blue
+    background: $blue
     color: #fff
 
 html, body
+    background: $white
     font-family: 'open sans'
     font-size: 14px
     height: 100%

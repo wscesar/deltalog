@@ -12,13 +12,18 @@ while i < text_input.length
     content = content.replace(RegExp('   ', 'g'), ' ') #trim three blank spaces
     content = content.replace(RegExp('  ', 'g'), ' ') #trim two blank spaces
     
-    @value = content
-    if `content != ''`
+    if content == ' '
+      @value = ''
+      content = ''
+    else
+      @value = content
+
+    if content != ''
       @nextElementSibling.classList.add 'fixed'
     else
-      if `content == ' '` then (@value = '') else (@value = content)
       @nextElementSibling.classList.remove 'fixed'
-    return
+    # return
+
   i++
 
 
@@ -198,8 +203,11 @@ document.querySelector('.modal .left').addEventListener 'click', ->
   group = img.getAttribute('data-group')
   next = img.getAttribute('data-number')
   next = parseInt(next) - 1
+  
   if next < 1 then (next = 3) else (next = next)
+
   img.classList.add 'hide'
+  
   setTimeout (->
     img.setAttribute 'src', 'assets/img/' + group + '-0' + next + '.jpg'
     img.setAttribute 'data-number', next
@@ -220,9 +228,11 @@ document.querySelector('.modal.background').addEventListener 'click', ->
   modal_table = document.querySelector('.modal.table')
   modal_banner = document.querySelector('.modal.banner')
   modal_background = document.querySelector('.modal.background')
+
   modal_table.classList.remove 'show'
   modal_banner.classList.remove 'show'
   modal_background.classList.remove 'show'
+
   setTimeout (->
     modal_table.style.display = 'none'
     modal_banner.style.display = 'none'
@@ -246,8 +256,8 @@ nav_a = document.querySelectorAll('nav a')
 i = 0
 while i < nav_a.length
   nav_a[i].addEventListener 'click', (->
-    page = @getAttribute('data-page')
-    goTo = document.querySelector(page).offsetTop
+    section = @getAttribute('data-section')
+    goTo = document.querySelector(section).offsetTop
     $('html, body').stop().animate { scrollTop: goTo }, 1000
     return
   ), false
@@ -301,12 +311,14 @@ window.onscroll = ->
  =                             Show and Hide Responsive Nav                              =
  ======================================================================================###
 
- nav = document.querySelectorAll('nav')
+ nav = document.querySelector('nav')
  nav_a = document.querySelectorAll('nav a')
+ 
  # show hidden nav
  document.querySelector('nav .button').addEventListener 'click', ->
    document.querySelector('nav').classList.add 'active'
    return
+ 
  # hide nav when user select an option
  i = 0
  while i < nav_a.length
@@ -325,31 +337,57 @@ window.onscroll = ->
 ======================================================================================###
 
 banner_thumbs = document.querySelectorAll('.ctrl > button')
-# apply changeBanner() on all banner_thumbs 
 
 changeBanner = (elem) ->
   banner = document.querySelector('#prime-logistics > .banner')
   next_image = elem.getAttribute('data-banner')
+  
   #pass trough banner_thumbs removing 'active' class
   i = 0
   while i < banner_thumbs.length
     banner_thumbs[i].classList.remove 'active'
     i++
+  
   #add 'active' class on clicked button
   elem.classList.add 'active'
+  
   # hide banner
   banner.style.opacity = '0'
+  
   # change image
   banner.setAttribute 'data-banner', next_image
+  
   # show banner
   banner.style.opacity = '1'
+
   return
 
+# set change banner time
+thumb = 1
+timer = setInterval((->
+  thumb++
+  if thumb > 3 then (thumb = 1) else (thumb = thumb)
+  $('#thumb0' + thumb).click()
+  return
+), 4000)
+
+# apply changeBanner() on all banner_thumbs 
 i = 0
 while i < banner_thumbs.length
   banner_thumbs[i].addEventListener 'click', (->
+
     changeBanner this
+    clearInterval timer
+
+    timer = setInterval((->
+      thumb++
+      if thumb > 3 then (thumb = 1) else (thumb = thumb)
+      $('#thumb0' + thumb).click()
+      return
+    ), 4000)
+
     return
+
   ), false
   i++
 

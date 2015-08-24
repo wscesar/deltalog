@@ -1,19 +1,20 @@
 footer
-	background: $bg-gray
+	background: $gray
 	text-align: center
+	padding-bottom: 61px
 
 	.col
 		display: inline-block
-		width: 33%
 		text-align: left
 		vertical-align: top
+		width: 33%
 
 		span
-			height: 66px
-			width: 66px
 			display: block
 			float: left
+			height: 66px
 			margin-right: 19px
+			width: 66px
 
 		.text
 			color: #fff
@@ -25,11 +26,16 @@ footer
 				margin-top: 16px
 
 .map
-	margin: -589px 0 589px
-	width: 100%
-	float: left
 	height: 589px
+	float: left
+	margin: 0 0 0
+	width: 100%
 	z-index: 0
 
-
-
+	&::before
+		background: linear-gradient($gray, transparent)
+		content: ''
+		height: 40px
+		position: absolute
+		width: 100%
+		z-index: 2

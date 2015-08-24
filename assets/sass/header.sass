@@ -1,23 +1,21 @@
 header
-	background: url(../img/banner.png) center top no-repeat
-	color: #fff
-	height: 483px
+	background: url(../img/header_bg.png) center top no-repeat
+	color: $white
+	height: 477px
 
 	&.fixed
 		margin-bottom: 100px
 
 	.logo
 		display: block
-		margin: 203px auto 146px
-		// box-shadow: 0 100px 100px #0f0
+		margin: 203px auto 120px
 
 	h1
 		font-size: 2.38rem
 		text-align: center
-		// text-shadow: 0 30px 10px #0f0
 
 nav
-	color: #fff
+	color: $white
 	text-align: center
 	z-index: 3
 
@@ -39,7 +37,7 @@ nav
 		font-size: 0.85rem
 		height: 100px
 		overflow: hidden
-		+transition(background, height 0.5s)
+		+transition(height 1s, background 0.5s)
 		width: 20%
 
 		&:first-child
@@ -47,7 +45,7 @@ nav
 
 		&:hover
 			border-bottom: solid 1px $green
-			background: $dark-blue
+			background: $blue
 			color: #000
 
 		span
