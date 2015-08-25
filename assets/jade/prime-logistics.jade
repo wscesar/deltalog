@@ -5,11 +5,16 @@ section#prime-logistics
 		b 1000m
 			sup 2
 
-	.banner(data-banner="1")
+	.banner(data-number="1")
+
 		.ctrl
-			button(data-banner="1")#thumb01.active
-			button(data-banner="2")#thumb02
-			button(data-banner="3")#thumb03
+			button.icon-left_arrow
+			button.icon-right_arrow
+
+		.thumbs
+			button(data-number="1")#thumb01.active
+			button(data-number="2")#thumb02
+			button(data-number="3")#thumb03
 
 	.strategic_location
 		.text.wrap

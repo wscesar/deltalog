@@ -1,0 +1,2 @@
+(function(){var e;e=document.getElementsByTagName("BODY")[0],e.mouseleave(function(){var e;e=document.querySelector(".modal.form").getAttribute("data-displayed"),"true"!==e&&($(".modal.form").css("display","block"),$(".modal.background").css("display","block"),setTimeout(function(){$(".modal.form").attr("data-displayed","true").addClass("show"),$(".modal.background").addClass("show")},1))})}).call(this);
+//# sourceMappingURL=unbounce.js.map

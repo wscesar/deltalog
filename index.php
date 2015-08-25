@@ -28,8 +28,6 @@
 <body>
     <?php require 'pages/home.php'; ?>
 
-    
-
     <!-- Js -->
     <script src='assets/js/jquery.js'></script>
     <script src='assets/js/app.js'></script>
@@ -38,13 +36,10 @@
     <script src='assets/js/vendor/analytics.js'></script>
     -->
 
-
-
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
 <script>
 
-    var map_icon = 'assets/img/map_logo.png';
     var map_center = new google.maps.LatLng(-23.1751372,-47.2839073,1623);
     var map_icon_position = new google.maps.LatLng(-23.1751372,-47.2839073,1623);
 
@@ -65,27 +60,23 @@
        };
 
        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-
-
-       
+      
        // opções do marcador
        var marker = new google.maps.Marker({
           position: map_icon_position,
           map: map,
           title:"Deltalog",
-          icon: map_icon,
+          icon: 'assets/img/map_logo.png',
           animation: google.maps.Animation.DROP
       });
 
     }
 
     google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+</script>
 
-    <script>
-        
+<script>
 
-
-    </script>
+</script>
 </body>
 </html>

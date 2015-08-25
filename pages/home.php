@@ -9,11 +9,15 @@
 </nav>
 <section id="prime-logistics">
   <h2 class="title">INFRAESTRUTURA COMPLETA <span class="br"> </span>LOTES INDUSTRIAIS A PARTIR DE <b>1000m<sup>2</sup></b></h2>
-  <div data-banner="1" class="banner">
+  <div data-number="1" class="banner">
     <div class="ctrl">
-      <button data-banner="1" id="thumb01" class="active"></button>
-      <button data-banner="2" id="thumb02"></button>
-      <button data-banner="3" id="thumb03"></button>
+      <button class="icon-left_arrow"></button>
+      <button class="icon-right_arrow"></button>
+    </div>
+    <div class="thumbs">
+      <button data-number="1" id="thumb01" class="active"></button>
+      <button data-number="2" id="thumb02"></button>
+      <button data-number="3" id="thumb03"></button>
     </div>
   </div>
   <div class="strategic_location">
@@ -102,24 +106,24 @@
 </section>
 <section id="contact">
   <div class="wrap"><img src="assets/img/logo.svg" width="266" height="37" class="logo"/>
-    <form onsubmit="send_form();  return false">
+    <form data-form="contact_form" onsubmit="send_form(this);  return false" id="contact_form">
       <div class="col1">
         <div>
-          <input type="text" id="name" name="name" required="required" class="text"/>
+          <input type="text" id="name" name="name" required="required" class="text name"/>
           <label for="name">Nome</label>
         </div>
         <div>
-          <input type="email" id="email" name="email" required="required" class="text"/>
+          <input type="email" id="email" name="email" required="required" class="text email"/>
           <label for="email">Email</label>
         </div>
         <div>
-          <input type="tel" id="phone" name="phone" required="required" class="text"/>
+          <input type="tel" id="phone" name="phone" required="required" class="text phone"/>
           <label for="phone">Telefone</label>
         </div>
       </div>
       <div class="col2">
         <div>
-          <textarea id="msg" name="msg" required="required" class="text"></textarea>
+          <textarea id="msg" name="msg" required="required" class="text msg"></textarea>
           <label for="msg">Mensagem</label>
         </div>
         <div>
@@ -161,8 +165,33 @@
 </footer>
 <div id="map-canvas" class="map"></div>
 <div class="modal background"></div>
+<div data-displayed="false" class="modal form">
+  <form data-form="modal_form" onsubmit="send_form(this);  return false" id="modal_form">
+    <div>
+      <input type="text" id="name2" name="name" required="required" class="text name"/>
+      <label for="name2">Nome</label>
+    </div>
+    <div>
+      <input type="email" id="email2" name="email" required="required" class="text email"/>
+      <label for="email2">Email</label>
+    </div>
+    <div>
+      <input type="tel" id="phone2" name="phone" required="required" class="text phone"/>
+      <label for="phone2">Telefone</label>
+    </div>
+    <div>
+      <textarea id="msg2" name="msg" required="required" class="text msg"></textarea>
+      <label for="msg2">Mensagem</label>
+    </div>
+    <div>
+      <button class="submit">enviar</button>
+    </div>
+  </form>
+</div>
 <div class="modal banner">
-  <figure><span class="ctrl left"></span><span class="ctrl right"></span><img/>
+  <figure>
+    <div class="ctrl icon-left_arrow"></div>
+    <div class="ctrl icon-right_arrow"></div><img/>
     <figcaption></figcaption>
   </figure>
 </div>

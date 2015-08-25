@@ -1,3 +1,43 @@
+###===============================================================
+=            Show modal form when user are leaving the page            =
+===============================================================###
+body = document.getElementsByTagName('BODY')[0]
+body.addEventListener 'mouseleave',  ->
+  
+  displayed = document.querySelector('.modal.form').getAttribute('data-displayed')
+  
+  if displayed != 'true'
+    $('.modal.form').css 'display', 'block'
+    $('.modal.background').css 'display', 'block'
+  
+    setTimeout (->
+      $('.modal.form').attr('data-displayed', 'true').addClass('show').addClass('shake')
+      $('.modal.background').addClass 'show'
+    ), 1
+
+
+
+
+###===============================================================
+=            Show modal form when user clic on button            =
+===============================================================###
+invite_form = document.querySelector('#allotments a')
+
+invite_form.addEventListener 'click',  ->
+  
+  displayed = document.querySelector('.modal.form').getAttribute('data-displayed')
+  
+  $('.modal.form').css 'display', 'block'
+  $('.modal.background').css 'display', 'block'
+
+  setTimeout (->
+    $('.modal.form').attr('data-displayed', 'true').addClass 'show'
+    $('.modal.background').addClass 'show'
+  ), 1
+
+
+
+
 ###==============================================
 =            Validate Form Function            =
 ==============================================###
@@ -35,21 +75,24 @@ while i < text_input.length
 =             Send Form Function                =
 ==============================================###
 
-send_form = ->
+send_form = (element) ->
+
   request = new XMLHttpRequest
-  submit = document.querySelector('form .submit')
-  name = document.getElementById('name').value
-  email = document.getElementById('email').value
-  phone = document.getElementById('phone').value
-  msg = document.getElementById('msg').value
-  data = 'name=' + name + '&email=' + email + '&phone=' + phone + '&msg=' + msg
+
+  form    = element.getAttribute('data-form')
+  submit  = document.querySelector('#' + form + ' .submit')
+  name    = document.querySelector('#' + form + ' .name').value
+  email   = document.querySelector('#' + form + ' .email').value
+  phone   = document.querySelector('#' + form + ' .phone').value
+  msg     = document.querySelector('#' + form + ' .msg').value
+  data    = 'name=' + name + '&email=' + email + '&phone=' + phone + '&msg=' + msg
   
   split_email = email.split('@')
   email_user = split_email[0]
   email_provider = split_email[1].split('.')[0]
   email_domain = split_email[1].split('.')[1]
-  # email_country   = split_email[1].split('.')[2]
-  # email_country != '' ? email_country = email_country : email = 'us'
+  email_country   = split_email[1].split('.')[2]
+  email_country != '' ? email_country = email_country : email = 'us'
   
   submit.setAttribute 'disabled', 'true'
   submit.innerHTML = ''
@@ -140,7 +183,6 @@ $('.icon-magnify, .icon-magnify + img').on 'click', ->
 =======================================================###
 
 $('.icon-paper, .icon-paper + img').on 'click', ->
-  `var table`
   table = @parentNode.getAttribute('data-table')
   table = document.querySelector(table)
   tables = document.querySelectorAll('.modal ul')
@@ -158,11 +200,8 @@ $('.icon-paper, .icon-paper + img').on 'click', ->
   setTimeout (->
     modal_table.classList.add 'show'
     modal_backgrund.classList.add 'show'
-    return
-  ), 10
+  ), 1
   
-  return
-
 
 
 
@@ -171,7 +210,7 @@ $('.icon-paper, .icon-paper + img').on 'click', ->
 =            Show Next Image Banner On Modal Window            =
 ===============================================================###
 
-document.querySelector('.modal .right').addEventListener 'click', ->
+document.querySelector('.modal .icon-right_arrow').addEventListener 'click', ->
   img = document.querySelector('.modal img')
   group = img.getAttribute('data-group')
   next = img.getAttribute('data-number')
@@ -198,7 +237,7 @@ document.querySelector('.modal .right').addEventListener 'click', ->
 =            Show Previous Image Banner On Modal Window          =
 ===============================================================###
 
-document.querySelector('.modal .left').addEventListener 'click', ->
+document.querySelector('.modal .icon-left_arrow').addEventListener 'click', ->
   img = document.querySelector('.modal img')
   group = img.getAttribute('data-group')
   next = img.getAttribute('data-number')
@@ -225,15 +264,28 @@ document.querySelector('.modal .left').addEventListener 'click', ->
 ==========================================###
 
 document.querySelector('.modal.background').addEventListener 'click', ->
+
+  # modals = document.querySelectorAll('.modal')
+  # for i in [0..modals.length] by (i++)
+    # console.log i
+    # alert i
+
+  # select all modal windows
+  modal_form = document.querySelector('.modal.form')
   modal_table = document.querySelector('.modal.table')
   modal_banner = document.querySelector('.modal.banner')
   modal_background = document.querySelector('.modal.background')
 
+  # remove 'show' class from all modal windows
+  modal_form.classList.remove 'show'
+  modal_form.classList.remove 'shake'
   modal_table.classList.remove 'show'
   modal_banner.classList.remove 'show'
   modal_background.classList.remove 'show'
 
+  # wait one second till the css animation ends and apply display none on all modal windows
   setTimeout (->
+    modal_form.style.display = 'none'
     modal_table.style.display = 'none'
     modal_banner.style.display = 'none'
     modal_background.style.display = 'none'
@@ -335,43 +387,51 @@ window.onscroll = ->
 ###======================================================================================
 =                              Change Banner Function                                   =
 ======================================================================================###
+banner              = document.querySelector('#prime-logistics > .banner')
+banner_left_arrow   = document.querySelector('#prime-logistics > .banner .icon-left_arrow')
+banner_right_arrow  = document.querySelector('#prime-logistics > .banner .icon-right_arrow')
+banner_thumbs       = document.querySelectorAll('.thumbs > button')
 
-banner_thumbs = document.querySelectorAll('.ctrl > button')
-
-changeBanner = (elem) ->
-  banner = document.querySelector('#prime-logistics > .banner')
-  next_image = elem.getAttribute('data-banner')
+changeBanner = (element) ->
+  next_banner  = element.getAttribute('data-number')
   
+  i = 0 
   #pass trough banner_thumbs removing 'active' class
-  i = 0
   while i < banner_thumbs.length
     banner_thumbs[i].classList.remove 'active'
     i++
   
-  #add 'active' class on clicked button
-  elem.classList.add 'active'
-  
-  # hide banner
-  banner.style.opacity = '0'
-  
-  # change image
-  banner.setAttribute 'data-banner', next_image
-  
-  # show banner
-  banner.style.opacity = '1'
+  element.classList.add 'active'                  # add 'active' class on clicked button
+  banner.style.opacity = '0'                      # hide banner
+  banner.setAttribute 'data-number', next_banner  # change image
+  banner.style.opacity = '1'                      # show banner
 
-  return
 
-# set change banner time
+
+
+
+###====================================
+=            Banner Timer            =
+====================================###
+
 thumb = 1
 timer = setInterval((->
   thumb++
+  
   if thumb > 3 then (thumb = 1) else (thumb = thumb)
-  $('#thumb0' + thumb).click()
-  return
+  
+  document.querySelector('#thumb0' + thumb).click()
+
 ), 4000)
 
-# apply changeBanner() on all banner_thumbs 
+
+
+
+
+###=================================================================
+=            Apply changeBanner() on all banner_thumbs             =
+=================================================================###
+
 i = 0
 while i < banner_thumbs.length
   banner_thumbs[i].addEventListener 'click', (->
@@ -383,13 +443,49 @@ while i < banner_thumbs.length
       thumb++
       if thumb > 3 then (thumb = 1) else (thumb = thumb)
       $('#thumb0' + thumb).click()
-      return
     ), 4000)
-
-    return
 
   ), false
   i++
+
+
+
+
+
+###=================================================
+=            Banner Left Arrow Function            =
+=================================================###
+
+banner_left_arrow.addEventListener 'click', ->
+  next_banner = banner.getAttribute('data-number')
+  next_banner = parseInt(next_banner) - 1
+
+  if next_banner < 1 then (next_banner = 3) else (next_banner = next_banner)
+
+  # banner.setAttribute 'data-number', next_banner
+  document.querySelector('#thumb0' + next_banner).click()
+
+
+
+
+
+###=================================================
+=            Banner Right Arrow Function            =
+=================================================###
+
+banner_right_arrow.addEventListener 'click', ->
+  next_banner = banner.getAttribute('data-number')
+  next_banner = parseInt(next_banner) + 1
+  
+  if next_banner > 3 then (next_banner = 1) else (next_banner = next_banner)
+
+  # banner.setAttribute 'data-number', next_banner
+  document.querySelector('#thumb0' + next_banner).click()
+
+
+
+
+
 
 
 

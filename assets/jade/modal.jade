@@ -1,9 +1,30 @@
 .modal.background
 
+.modal.form(data-displayed="false")
+	form(data-form='modal_form', onsubmit="send_form(this);  return false")#modal_form
+		div
+			input(type="text", id="name2", name="name", required).text.name
+			label(for="name2") Nome
+
+		div
+			input(type="email", id="email2", name="email", required).text.email
+			label(for="email2") Email
+
+		div
+			input(type="tel", id="phone2", name="phone", required).text.phone
+			label(for="phone2") Telefone
+
+		div
+			textarea(id="msg2", name="msg", required).text.msg
+			label(for="msg2") Mensagem
+
+		div
+			button.submit enviar
+
 .modal.banner
 	figure
-		span.ctrl.left
-		span.ctrl.right
+		.ctrl.icon-left_arrow
+		.ctrl.icon-right_arrow
 		img
 		figcaption
 
