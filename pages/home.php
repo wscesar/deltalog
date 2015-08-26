@@ -10,6 +10,9 @@
 <section id="prime-logistics">
   <h2 class="title">INFRAESTRUTURA COMPLETA <span class="br"> </span>LOTES INDUSTRIAIS A PARTIR DE <b>1000m<sup>2</sup></b></h2>
   <div data-number="1" class="banner">
+    <div class="caption"> 
+      <p>Perspectiva Ilustrativa do Empreendimento</p>
+    </div>
     <div class="ctrl">
       <button class="icon-left_arrow"></button>
       <button class="icon-right_arrow"></button>
@@ -48,14 +51,14 @@
       </figure>
     </div>
     <div class="row_02 wrap">
-      <figure data-image="highway-01.jpg" data-number="1" data-group="highway"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_04.png"/>
+      <figure data-section="#prime-logistics" data-image="highway-01.jpg" data-number="1" data-group="highway" data-caption="Fácil Acesso a SP75 - Sorocaba e São Paulo via Castelo Branco" class="figure1"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_04.png"/>
         <figcaption>Fácil Acesso a SP75 - Sorocaba e <span class="br"></span>São Paulo via Castelo Branco</figcaption>
       </figure>
-      <figure data-image="highway-02.jpg" data-number="2" data-group="highway"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_05.png"/>
+      <figure data-section="#prime-logistics" data-image="highway-02.jpg" data-number="2" data-group="highway" data-caption="Fácil Acesso a SP75 - Campinas e São Paulo via Bandeirantes" class="figure2"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_05.png"/>
         <figcaption>Fácil Acesso a SP75 - Campinas e <span class="br"></span>São Paulo via Bandeirantes</figcaption>
       </figure>
-      <figure data-image="highway-03.jpg" data-number="3" data-group="highway"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_06.png"/>
-        <figcaption>Fácil Acesso ao DeltaLog pelos dois<span class="br"></span>sentidos Campinas e Sorocaba</figcaption>
+      <figure data-section="#prime-logistics" data-image="highway-03.jpg" data-number="3" data-group="highway" data-caption="Fácil Acesso ao DeltaLog pelos dois sentidos Campinas e Sorocaba" class="figure3"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_06.png"/>
+        <figcaption>Fácil Acesso ao DeltaLog pelos dois <span class="br"></span>sentidos Campinas e Sorocaba</figcaption>
       </figure>
     </div>
   </div>
@@ -64,17 +67,17 @@
   <div class="wrap">
     <h2>PROJETO DELTALOG</h2>
     <div class="cols col1"><span class="icon icon-shield"></span>
-      <figure data-image="infrastructure-01.jpg" data-number="1" data-group="infrastructure">
+      <figure data-image="infrastructure-01.jpg" data-number="1" data-group="infrastructure" data-section="#project" data-caption="Perspectiva Ilustrativa do Empreendimento" class="figure1">
         <figcaption>SEGURANÇA <span class="br"></span>24H</figcaption><span class="icon-magnify"></span><img src="assets/img/project_photo_01.png" width="236" height="236"/>
       </figure>
     </div>
     <div class="cols col2"><span class="icon icon-dish"></span>
-      <figure data-image="infrastructure-02.jpg" data-number="2" data-group="infrastructure">
+      <figure data-image="infrastructure-02.jpg" data-number="2" data-group="infrastructure" data-section="#project" data-caption="Perspectiva Ilustrativa do Empreendimento" class="figure2">
         <figcaption>ALIMENTAÇÃO<span class="br">/</span>NEGÓCIOS</figcaption><span class="icon-magnify"></span><img src="assets/img/project_photo_02.png" width="236" height="236"/>
       </figure>
     </div>
     <div class="cols col3"><span class="icon icon-truck"></span>
-      <figure data-image="infrastructure-03.jpg" data-number="3" data-group="infrastructure">
+      <figure data-image="infrastructure-03.jpg" data-number="3" data-group="infrastructure" data-section="#project" data-caption="Perspectiva Ilustrativa do Empreendimento" class="figure3">
         <figcaption>MOBILIDADE</figcaption><span class="icon-magnify"></span><img src="assets/img/project_photo_03.png" width="236" height="236"/>
       </figure>
     </div>
@@ -87,9 +90,9 @@
   <div class="wrap">
     <h2 class="title">LOTES <span class="bold">PLANOS</span></h2><a role="button"><span class="icon-paper"></span><span class="text v-centered">PARA RECEBER INFORMAÇÕES COMPLETAS CLIQUE AQUI.</span></a>
     <div class="row">
-      <figure data-image="allotments-01.jpg" data-number="1" data-group="allotments"><span class="icon-magnify"></span><img src="assets/img/allotments_photo_01.png" width="311" height="228"/></figure>
-      <figure data-image="allotments-02.jpg" data-number="2" data-group="allotments"><span class="icon-magnify"></span><img src="assets/img/allotments_photo_02.png" width="311" height="228"/></figure>
-      <figure data-image="allotments-03.jpg" data-number="3" data-group="allotments"><span class="icon-magnify"></span><img src="assets/img/allotments_photo_03.png" width="311" height="228"/></figure>
+      <figure data-image="allotments-01.jpg" data-number="1" data-group="allotments" data-section="#allotments" class="figure1"><span class="icon-magnify"></span><img src="assets/img/allotments_photo_01.png" width="311" height="228"/></figure>
+      <figure data-image="allotments-02.jpg" data-number="2" data-group="allotments" data-section="#allotments" class="figure2"><span class="icon-magnify"></span><img src="assets/img/allotments_photo_02.png" width="311" height="228"/></figure>
+      <figure data-image="allotments-03.jpg" data-number="3" data-group="allotments" data-section="#allotments" class="figure3"><span class="icon-magnify"></span><img src="assets/img/allotments_photo_03.png" width="311" height="228"/></figure>
       <div class="textbox">
         <p>DeltaLog é um condomínio industrial localizado as margens da SP75 (Rodovia Santos Dumont). Com logística privilegiada o DeltaLog oferece lotes a partir de 1000m2, planos pronto para construir. Toda a infraestrutura como ruas, esgoto e asfato já está  concluída. DeltaLog é ideal para empresas de pequeno e médio porte que se preocupam com segurança, logística e atendimento. Está localizado na cidade de Salto/SP, entre as cidades de Itu e Indaituba e a poucos quilômetros de Campinas e Sorocaba.</p>
         <p>O condomínio DeltaLog possuí projetos de galpão aprovados para construção, agilizando ainda mais o processo de implantação.</p>
@@ -101,19 +104,21 @@
 <section id="video">
   <div class="wrap">
     <p><span class="bold">Lotes planos prontos para construir. </span>Investimento em segurança, logistica e atendimento.</p><img src="assets/img/logo.svg" width="266" height="37" class="logo"/>
-    <iframe src="https://localhost/deltalog/assets/img/video.avi" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+    <video autoplay="autoplay" poster="assets/img/poster.png" class="video">
+      <source src="assets/img/video.mp4"/>
+    </video>
   </div>
 </section>
 <section id="contact">
   <div class="wrap"><img src="assets/img/logo.svg" width="266" height="37" class="logo"/>
-    <form data-form="contact_form" onsubmit="send_form(this);  return false" id="contact_form">
+    <form data-form="#contact_form" onsubmit="egoi(this);  return false" id="contact_form">
       <div class="col1">
         <div>
           <input type="text" id="name" name="name" required="required" class="text name"/>
           <label for="name">Nome</label>
         </div>
         <div>
-          <input type="email" id="email" name="email" required="required" class="text email"/>
+          <input type="email" id="email" name="email" data-form="#contact_form" required="required" class="text email"/>
           <label for="email">Email</label>
         </div>
         <div>
@@ -166,13 +171,13 @@
 <div id="map-canvas" class="map"></div>
 <div class="modal background"></div>
 <div data-displayed="false" class="modal form">
-  <form data-form="modal_form" onsubmit="send_form(this);  return false" id="modal_form">
+  <form data-form="#modal_form" onsubmit="send_form(this); egoi(this);  return false" id="modal_form">
     <div>
       <input type="text" id="name2" name="name" required="required" class="text name"/>
       <label for="name2">Nome</label>
     </div>
     <div>
-      <input type="email" id="email2" name="email" required="required" class="text email"/>
+      <input type="email" id="email2" name="email" data-form="#modal_form" required="required" class="text email"/>
       <label for="email2">Email</label>
     </div>
     <div>

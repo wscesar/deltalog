@@ -17,13 +17,12 @@
     opacity: 0
     position: fixed
     z-index: 3
-    +transition(1s)
+    +transition(0.5s)
 
     &.background
         background: rgba(0,0,0,0.5)
         height: 100%
         width: 100%
-        display: block
 
     &.show
         opacity: 1
@@ -36,7 +35,6 @@
         left: 50%
         position: fixed
         top: 50%
-        transform-origin: 50% 50%
         +transform(translateY(-50%) translateX(-50%))
 
     &.form
@@ -54,7 +52,7 @@
             width: 100%
 
             label
-                color: $gray
+                color: #949494
                 left: 8px
                 padding: 0 5px 2px
                 position: absolute
@@ -67,14 +65,14 @@
                     left: 0
                     font-size: 0.8rem
                     color: #fff
-                    background: $gray
+                    background: #949494
                     height: auto
                     width: 100%
 
             .text
                 background: none
-                border: solid 1px $gray
-                color: $gray
+                border: solid 1px #949494
+                color: #949494
                 font-size: 1rem
                 margin-bottom: 12px
                 padding: 5px
@@ -85,7 +83,7 @@
                     left: 0
                     font-size: 0.8rem
                     color: #fff
-                    background: $gray
+                    background: #949494
                     height: auto
                     width: 100%
 
@@ -124,6 +122,7 @@
 
                 &.success
                     background: #0f0
+                    cursor: default
 
                 &.error
                     background: #f00
@@ -133,12 +132,24 @@
     &.banner
         width: 800px
 
-    figure img
-        width: 100%
-        +transition(0.5s)
 
-        &.hide
-            opacity: 0
+
+    figure
+        img
+            width: 100%
+            +transition(0.5s)
+
+            &.hide
+                opacity: 0
+    
+        figcaption
+            background-color: rgba(0, 0, 0, 0.68)
+            position: absolute
+            padding: 24px 0
+            width: 100%
+            color: $white
+            bottom: 0
+            text-align: center
 
     .ctrl
         cursor: pointer

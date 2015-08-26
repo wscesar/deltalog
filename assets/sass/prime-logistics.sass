@@ -23,10 +23,22 @@ section#prime-logistics
 		width: 100%
 		+transition(0.5s)
 
+		.caption
+			background-color: rgba(0, 0, 0, 0.68)
+			position: absolute
+			padding: 24px 0
+			width: 100%
+			color: $white
+			bottom: 0
+
+			p
+				opacity: 0.54
+				left: calc(50% + 85px)
+
 		.ctrl
 			position: absolute
-			width: 100%
 			height: 100%
+			width: 100%
 
 			button
 				background-color: transparent
@@ -35,7 +47,7 @@ section#prime-logistics
 				position: absolute
 				top: 50%
 				width: 58px
-				+transform(translateY(-50%))
+				+transform( translateY(-50%) )
 
 				&.icon-left_arrow
 					left: 25px
@@ -49,7 +61,9 @@ section#prime-logistics
 			margin: auto
 			position: absolute
 			width: 122px
-			+transform(translateX(-50%))
+			z-index: 2
+			+transform( translateX(-50%) )
+
 
 			button
 				background: rgba(255,255,255,0.25)
@@ -119,8 +133,8 @@ section#prime-logistics
 				left: 50%
 				position: absolute
 				width: 58px
-				+transform(translateX(-50%))
 				z-index: 2
+				+transform( translateX(-50%) )
 
 			img
 				width: 100%
@@ -152,7 +166,7 @@ section#prime-logistics
 						text-align: center
 						top: 50%
 						width: 100%
-						+transform(translateY(-50%))
+						+transform( translateY(-50%) )
 
 				p
 					padding: 0 5%

@@ -1,13 +1,13 @@
 .modal.background
 
 .modal.form(data-displayed="false")
-	form(data-form='modal_form', onsubmit="send_form(this);  return false")#modal_form
+	form(data-form='#modal_form', onsubmit="send_form(this); egoi(this);  return false")#modal_form
 		div
 			input(type="text", id="name2", name="name", required).text.name
 			label(for="name2") Nome
 
 		div
-			input(type="email", id="email2", name="email", required).text.email
+			input(type="email", id="email2", name="email", data-form="#modal_form", required).text.email
 			label(for="email2") Email
 
 		div

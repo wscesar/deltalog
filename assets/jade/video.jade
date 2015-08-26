@@ -6,7 +6,7 @@ section#video
 		
 		img(src="assets/img/logo.svg", width="266", height="37").logo
 
-		//- iframe(src="https://www.youtube.com/embed/F4HLrIHdldA", frameborder="0", allowfullscreen)
-		iframe(src="https://localhost/deltalog/assets/img/video.avi", frameborder="0", allowfullscreen)
+		//- iframe(src="https://www.youtube.com/embed/F4HLrIHdldA", frameborder="0", allowfullscreen).video
 
-		//- video(src="https://localhost/deltalog/assets/img/video.avi")
+		video.video(autoplay, poster="assets/img/poster.png")
+			source(src="assets/img/video.mp4")
