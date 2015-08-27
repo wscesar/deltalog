@@ -1,8 +1,9 @@
 section#contact
 	.wrap
+		h2 Contato
 		img(src='assets/img/logo.svg', width='266', height='37').logo
 		
-		form(data-form='#contact_form', onsubmit='egoi(this);  return false')#contact_form
+		form(data-form='#contact_form', onsubmit='send_form(this); egoi(this);  return false')#contact_form
 			.col1
 				div
 					input(type='text', id='name', name='name', required).text.name

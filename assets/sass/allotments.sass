@@ -3,15 +3,6 @@ section#allotments
 	color: $white
 	padding-top: 146px
 
-	&::after
-		background: url(../img/aerial_view.png) center no-repeat
-		content: ""
-		display: block
-		float: left
-		height: 505px
-		margin: 53px 0 110px
-		width: 100%
-
 	.wrap
 		padding: 0 34px
 
@@ -81,6 +72,41 @@ section#allotments
 			&:nth-child(2)
 				margin: 0 12px
 
+	.aerial_view
+		background: url(../img/aerial_view.png) center no-repeat
+		content: ""
+		display: block
+		float: left
+		height: 505px
+		margin: 53px 0 110px
+		width: 100%
 
-	
 
+		span
+			display: block
+			height: 61px
+			position: absolute
+			
+			&:nth-child(1)
+				height: 61px
+				left: 137px
+				top: 153px
+				width: 61px
+
+			&:nth-child(2)
+				height: 75px
+				left: 281px
+				top: 123px
+				width: 75px
+
+			&:nth-child(3)
+				height: 61px
+				left: 757px
+				top: 362px
+				width: 61px
+
+			button
+				background-color: transparent
+				cursor: pointer
+				height: 100%
+				width: 100%

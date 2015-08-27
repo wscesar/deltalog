@@ -28,25 +28,63 @@
         opacity: 1
 
     &.form, &.banner, &.table
-        background: $white url(../img/loading.gif) center no-repeat
-        border: solid 1px #333
+        background: $white
         border-radius: 2px
-        box-shadow: 10px 10px 0px $white, -10px -10px 0px $white, -10px 10px 0px $white, 10px -10px 0px $white, -20px 20px 20px #333, 20px 20px 20px #333
         left: 50%
         position: fixed
         top: 50%
         +transform(translateY(-50%) translateX(-50%))
 
+    &.table
+        border: solid 1px #ccc
+        box-shadow: 20px 20px 0px $white, -20px -20px 0px $white, -20px 20px 0px $white, 20px -20px 0px $white, -40px 40px 40px #777, 40px 40px 40px #777
+
+        ul
+            width: auto
+            display: none
+
+            &.show
+                display: block
+
+            li
+                background: #fff
+                padding: 15px
+                
+                &:nth-child(odd)
+                    background: #eee
+
+                &.title
+                    background: $blue
+                    color: #fff
+                    padding: 20px 0 
+                    text-align: center
+                
+                span
+                    display: inline-block
+                    width: 300px
+    
     &.form
-        background: $white
+        border: none
+        box-shadow: 10px 10px 0px $white, -10px -10px 0px $white, -10px 10px 0px $white, 10px -10px 0px $white, -20px 20px 20px #777, 20px 20px 20px #777
         padding: 50px
         width: 600px
         height: auto
+
+        .shake_title
+            display: none
 
         &.shake
             animation-name: shake_form
             animation-duration: 0.7s
             animation-iteration-count: 1
+
+            .title
+                display: none
+                line-height: 1.4
+
+            .shake_title
+                display: block
+                line-height: 1.4
 
         form
             width: 100%
@@ -58,7 +96,7 @@
                 position: absolute
                 top: 8px
                 width: 100%
-                +transition(0.2s)
+                +transition(0.5s)
 
                 &.fixed
                     top: -7px
@@ -103,90 +141,41 @@
                 height: 126px
                 resize: none
 
-            .submit
-                background: #00a6ca
-                color: #fff
-                cursor: pointer
-                float: right
-                height: 44px
-                min-width: 90px
-                padding: 0 5px
-                font-weight: 700
+    &.banner
+        border: solid 1px #ccc
+        background: $white url(../img/loading.gif) center no-repeat
+        box-shadow: 10px 10px 0px $white, -10px -10px 0px $white, -10px 10px 0px $white, 10px -10px 0px $white, -20px 20px 20px #777, 20px 20px 20px #777
+        width: 800px
+
+        figure
+            img
+                width: 100%
                 +transition(1s)
 
                 &.hide
                     opacity: 0
-
-                &.loading
-                    background: transparent url(../img/loading.gif) 52px center no-repeat
-
-                &.success
-                    background: #0f0
-                    cursor: default
-
-                &.error
-                    background: #f00
-
-
-
-    &.banner
-        width: 800px
-
-
-
-    figure
-        img
-            width: 100%
-            +transition(0.5s)
-
-            &.hide
-                opacity: 0
-    
-        figcaption
-            background-color: rgba(0, 0, 0, 0.68)
-            position: absolute
-            padding: 24px 0
-            width: 100%
-            color: $white
-            bottom: 0
-            text-align: center
-
-    .ctrl
-        cursor: pointer
-        display: block
-        height: 58px
-        position: absolute
-        top: 50%
-        width: 58px
-        z-index: 3
-        +transform(translateY(-50%))
-
-        &.icon-left_arrow
-            left: 20px
-
-        &.icon-right_arrow
-            right: 20px
-
-    ul
-        width: auto
-        display: none
-
-        li
-            background: #fff
-            padding: 7px
-            
-            &:nth-child(odd)
-                background: #eee
-
-            &.title
-                background: $blue
-                color: #fff
-                padding: 5px 0 
+        
+            figcaption
+                background-color: rgba(0, 0, 0, 0.68)
+                position: absolute
+                padding: 24px 0
+                width: 100%
+                color: $white
+                bottom: 0
                 text-align: center
-            
-            span
-                display: inline-block
-                width: 300px
 
-        &.show
+        .ctrl
+            cursor: pointer
             display: block
+            height: 58px
+            position: absolute
+            top: 50%
+            width: 58px
+            z-index: 3
+            +transform(translateY(-50%))
+
+            &.icon-left_arrow
+                left: 20px
+
+            &.icon-right_arrow
+                right: 20px

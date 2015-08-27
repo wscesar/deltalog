@@ -29,7 +29,8 @@
 
 			&[data-number="3"]
 				background: url(../img/infrastructure-3-1053.png) center no-repeat
-
+	
+	section#strategic-location
 		.photos 
 			.row_01 figure:nth-child(2)
 				margin: 0 100px
@@ -47,6 +48,7 @@
 
 		.br
 			font-size: 0
+
 
 	section#allotments
 		.wrap
@@ -75,11 +77,6 @@
 			width: 100%
 
 @media only screen and (max-width: 959px) 
-
-	.modal.banner,
-	.modal.table,
-		width: 80%
-
 	.wrap
 		width: 768px
 		padding: 0 10px
@@ -123,7 +120,7 @@
 					&:nth-child(2)
 						margin: 5px 0
 
-
+	section#strategic-location
 		.photos 
 			.row_01 figure
 				&:nth-child(2)
@@ -209,6 +206,17 @@
 
 			&[data-number="3"]
 				background: url(../img/infrastructure-3-767.png) center no-repeat
+	
+	section#strategic-location
+		&::after
+			display: none
+
+		.text h2
+			font-size: 2rem
+			margin-top: 40px
+
+			&::before
+				display: none
 
 		.photos 
 			.row_01 figure:nth-child(2),
@@ -244,14 +252,14 @@
 				font-size: 0
 
 		.col2
-			margin: 0 20px
+			margin: 0 40px
 
 
 	section#allotments
 		padding-bottom: 20px
 		padding-top: 40px
 
-		&::after
+		.aerial_view
 			display: none
 
 		h2
@@ -317,7 +325,7 @@
 				float: none
 				display: inline
 		
-		iframe
+		.video
 			height: auto
 			width: 100%
 
@@ -363,8 +371,23 @@
 		.map
 			margin: 0
 			height: 50%
+			height: 50vh
 
 @media only screen and (max-width: 479px) 
+	.modal.banner,
+	.modal.table,
+		width: 75%
+		box-shadow: 10px 10px 0px $white, -10px -10px 0px $white, -10px 10px 0px $white, 10px -10px 0px $white, -20px 20px 20px #777, 20px 20px 20px #777
+		
+		ul li
+			padding: 5px 0 5px 5px
+
+			&.title
+				padding: 5px 0 5px 5px
+
+			span
+				display: inline
+
 	.wrap
 		width: 100%
 		padding: 0 10px
@@ -442,6 +465,10 @@
 		.banner
 			height: 116px
 
+			.caption
+				padding: 5px 0
+				z-index: 3
+
 			&[data-number="1"]
 				background: url(../img/infrastructure-1-479.png) center no-repeat
 
@@ -450,23 +477,38 @@
 
 			&[data-number="3"]
 				background: url(../img/infrastructure-3-479.png) center no-repeat
+	
 
-		.photos .row_01 figure,
-		.photos .row_02 figure,
-		.photos .row_01 figure:nth-child(2),
-		.photos .row_02 figure:nth-child(2)
-			width: 100%
+	section#strategic-location
+		h2
+			font-size: 2rem
+			margin-top: 42px
 
-		.strategic_location
-			h2
-				font-size: 2rem
-				margin-top: 42px
+			&::before
+				display: none
 
-				&::before
-					display: none
+		p
+			padding: 0 10px
 
-			p
-				padding: 0 10px
+		.photos 
+			.row_01,
+			.row_02
+				figure
+					width: 100%
+			
+					img
+						width: 220px
+						margin: auto
+			
+			.row_01 figure .icons
+				top: 191px
+
+			.row_02 figure .icons
+				top: 80px
+	
+	section#project .col2
+		display: block
+
 
 
 	section#allotments
@@ -504,7 +546,7 @@
 		.logo
 			display: none
 
-		iframe
+		.video
 			margin: 20px auto 0
 
 

@@ -1,22 +1,31 @@
 .modal.background
 
-.modal.form(data-displayed="false")
-	form(data-form='#modal_form', onsubmit="send_form(this); egoi(this);  return false")#modal_form
+.modal.form(data-displayed='false')
+	.title 
+		p Para receber mais informações sobre o empreendimento Deltalog, por favor preencha as informações abaixo.
+	
+	.shake_title
+		p Obrigado por visitar o site do condomínio Deltalog. 
+		p Caso tenha interesse em receber mais informações sobre o empreendimento sem compromisso, por favor preencha as informações abaixo.
+
+	//- img(src='assets/img/logo.svg', width='50%').logo
+
+	form(data-form='#modal_form', onsubmit='send_form(this); egoi(this);  return false')#modal_form
 		div
-			input(type="text", id="name2", name="name", required).text.name
-			label(for="name2") Nome
+			input(type='text', id='name2', name='name', required).text.name
+			label(for='name2') Nome
 
 		div
-			input(type="email", id="email2", name="email", data-form="#modal_form", required).text.email
-			label(for="email2") Email
+			input(type='email', id='email2', name='email', data-form='#modal_form', required).text.email
+			label(for='email2') Email
 
 		div
-			input(type="tel", id="phone2", name="phone", required).text.phone
-			label(for="phone2") Telefone
+			input(type='tel', id='phone2', name='phone', required).text.phone
+			label(for='phone2') Telefone
 
 		div
-			textarea(id="msg2", name="msg", required).text.msg
-			label(for="msg2") Mensagem
+			textarea(id='msg2', name='msg', required).text.msg
+			label(for='msg2') Mensagem
 
 		div
 			button.submit enviar

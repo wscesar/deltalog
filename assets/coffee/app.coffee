@@ -1,19 +1,25 @@
-###===============================================================
+###=====================================================================
 =            Show modal form when user are leaving the page            =
-===============================================================###
+=====================================================================###
+
 do ->
-  document.querySelector('body').onmouseleave =  ->
-    
-    displayed = document.querySelector('.modal.form').getAttribute('data-displayed')
-    
-    if displayed != 'true'
-      $('.modal.form').css 'display', 'block'
-      $('.modal.background').css 'display', 'block'
-    
+  modal_form = document.querySelector('.modal.form')
+  modal_bg = document.querySelector('.modal.background')
+
+  document.querySelector('body').addEventListener 'mouseleave', (element) ->
+    displayed = modal_form.getAttribute('data-displayed')
+
+    if element.offsetY - $(window).scrollTop() < 0 and displayed != 'true'
+
+      modal_form.style.display = 'block'
+      modal_bg.style.display = 'block'
+
       setTimeout (->
-        $('.modal.form').attr('data-displayed', 'true').addClass('show').addClass('shake')
-        $('.modal.background').addClass 'show'
-      ), 1
+        modal_bg.classList.add 'show'
+        modal_form.classList.add 'show'
+        modal_form.classList.add 'shake'
+        modal_form.setAttribute 'data-displayed', 'true'
+      ),500
 
 
 
@@ -89,13 +95,12 @@ while i < text_input.length
             
             if response != 'valid-email'
               submit.setAttribute 'disabled', 'true'
-              submit.style.background = 'orange'
+              submit.classList.add 'alert'
               submit.innerHTML = 'Informe um email válido'
             else
               submit.removeAttribute 'disabled'
-              submit.style.background = ''
+              submit.classList.remove 'alert'
               submit.innerHTML = 'Enviar'
-
   i++
 
 
@@ -112,7 +117,6 @@ send_form = (element) ->
   email       = document.querySelector(form + ' .email').value
   phone       = document.querySelector(form + ' .phone').value
   msg         = document.querySelector(form + ' .msg').value
-  all_submits = document.querySelectorAll('form .submit')
   data        = 'name=' + name + '&email=' + email + '&phone=' + phone + '&msg=' + msg
   
   submit.setAttribute 'disabled', 'true'
@@ -128,37 +132,28 @@ send_form = (element) ->
 
   request.onload = ->
     if request.status >= 200 and request.status < 400
-      # set data-send equals true on all submit button
-      all_submits[0].setAttribute 'data-send', 'true'
-      all_submits[1].setAttribute 'data-send', 'true'
-      
-      # disable all submit button
-      all_submits[0].setAttribute 'disabled', 'true'
-      all_submits[1].setAttribute 'disabled', 'true'
+      all_submits = document.querySelectorAll('form .submit')
 
-      all_submits[0].classList.add 'hide'
-      all_submits[1].classList.add 'hide'
+      # set data-displayed on modal form to true
+      document.querySelector('.modal.form').setAttribute 'data-displayed', 'true'
 
-      all_submits[0].classList.add 'success'
-      all_submits[1].classList.add 'success'
+      i = 0
+      while i < all_submits.length
+        # set data-send equals true on all submit button
+        all_submits[i].setAttribute 'data-send', 'true'
+        
+        # disable all submit button
+        all_submits[i].setAttribute 'disabled', 'true'
+        all_submits[i].classList.add 'hide'
+        all_submits[i].classList.add 'success'
+        all_submits[i].innerHTML = 'Sua mensagem enviada com sucesso, obrigado'
+        all_submits[i].classList.remove 'loading'
+        all_submits[i].classList.remove 'hide'
 
-      all_submits[0].innerHTML = 'Sua mensagem enviada com sucesso, obrigado'
-      all_submits[1].innerHTML = 'Sua mensagem enviada com sucesso, obrigado'
+        i++
 
-      all_submits[0].classList.remove 'loading'
-      all_submits[1].classList.remove 'loading'
-
-      all_submits[0].classList.remove 'hide'
-      all_submits[1].classList.remove 'hide'
-
-      # submit.classList.add 'hide'
-      # submit.classList.add 'success'
-      # submit.innerHTML = 'Mensagem enviada com sucesso'
-      # submit.classList.remove 'loading'
-      # submit.classList.remove 'hide'
     else
       alert 'Erro ao enviar email, arquivo send-contact não encontrado, contate o administrador do site'
-
 
 
 
@@ -217,7 +212,7 @@ do ->
 =            Magnify Images On a Modal Banner             =
 ========================================================###
 do ->
-  $('.icon-magnify, .icon-magnify + img').on 'click', ->
+  $('.icon-magnify, .icon-magnify + img, .aerial_view button').on 'click', ->
     img                  = @parentNode.getAttribute('data-image')
     group                = @parentNode.getAttribute('data-group')
     number               = @parentNode.getAttribute('data-number')
@@ -252,7 +247,6 @@ do ->
 
 
 
-
 ###===============================================================
 =            Show Next Image Banner On Modal Window            =
 ===============================================================###
@@ -269,13 +263,8 @@ do ->
 
     next_caption = document.querySelector(section + ' .figure' + next).getAttribute('data-caption')
 
-    if next_caption != null
-      caption.innerHTML = next_caption
-      caption.style.display = 'block'
-    else
-      caption.innerHTML = ''
-      caption.style.display = 'none'
-    
+    caption.innerHTML = next_caption
+    caption.style.display = 'block'
     img.classList.add 'hide'
     
     setTimeout (->
@@ -306,13 +295,8 @@ do ->
 
     next_caption = document.querySelector(section + ' .figure' + next).getAttribute('data-caption')
     
-    if next_caption != null
-      caption.innerHTML = next_caption
-      caption.style.display = 'block'
-    else
-      caption.innerHTML = ''
-      caption.style.display = 'none'
-
+    caption.innerHTML = next_caption
+    caption.style.display = 'block'
     img.classList.add 'hide'
     
     setTimeout (->
@@ -337,21 +321,21 @@ do ->
     modal_form = document.querySelector('.modal.form')
     modal_table = document.querySelector('.modal.table')
     modal_banner = document.querySelector('.modal.banner')
-    modal_background = document.querySelector('.modal.background')
+    modal_bg = document.querySelector('.modal.background')
 
     # remove 'show' class from all modal windows
     modal_form.classList.remove 'show'
-    modal_form.classList.remove 'shake'
     modal_table.classList.remove 'show'
     modal_banner.classList.remove 'show'
-    modal_background.classList.remove 'show'
+    modal_bg.classList.remove 'show'
 
     # wait one second till the css animation ends and apply display none on all modal windows
     setTimeout (->
+      modal_form.classList.remove 'shake'
       modal_form.style.display = 'none'
       modal_table.style.display = 'none'
       modal_banner.style.display = 'none'
-      modal_background.style.display = 'none'
+      modal_bg.style.display = 'none'
       return
     ), 1000
 
@@ -369,17 +353,21 @@ do ->
   nav_a = document.querySelectorAll('nav a')
   to_top = document.querySelector('.icon-top_arrow')
 
-  to_top.addEventListener 'click', (->
+  to_top.onclick = ->
     $('html, body').stop().animate { scrollTop: 0 }, 1000
-  )
 
   i = 0
   while i < nav_a.length
-    nav_a[i].addEventListener 'click', (->
+    
+    nav_a[i].onclick = ->
+      
       section = @getAttribute('data-section')
       goTo = document.querySelector(section).offsetTop
+
       $('html, body').stop().animate { scrollTop: goTo }, 1000
-    ), false
+
+      return false
+
     i++
 
 
@@ -460,7 +448,9 @@ banner_right_arrow  = document.querySelector('#prime-logistics > .banner .icon-r
 banner_thumbs       = document.querySelectorAll('.thumbs > button')
 
 changeBanner = (element) ->
-  next_banner  = element.getAttribute('data-number')
+  next_banner   = element.getAttribute('data-number')
+  next_caption  = element.getAttribute('data-caption')
+  caption       = document.querySelector('#prime-logistics .banner .caption p')
   
   i = 0 
   #pass trough banner_thumbs removing 'active' class
@@ -471,6 +461,7 @@ changeBanner = (element) ->
   element.classList.add 'active'                      # add 'active' class on clicked thumb
   banner.style.opacity = '0'                          # hide banner
   banner.setAttribute 'data-number', next_banner      # change image
+  caption.innerHTML = next_caption                    #change caption
   banner.style.opacity = '1'                          # show banner
 
 

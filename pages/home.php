@@ -5,26 +5,28 @@
   </div>
 </header>
 <nav>
-  <div class="wrap"><a data-section="#prime-logistics"><span>LOGÍSTICA PRIVILEGIADA</span></a><a data-section="#project"><span>PROJETO</span></a><a data-section="#allotments"><span>LOTES</span></a><a data-section="#video"><span>VIDEO APRESENTAÇÃO</span></a><a data-section="#contact"><span>CONTATO/VENDAS</span></a><span class="button"> <span class="stripe"></span><span class="stripe"></span><span class="stripe"></span></span></div>
+  <div class="wrap"><a data-section="#strategic-location"><span>LOGÍSTICA PRIVILEGIADA</span></a><a data-section="#project"><span>PROJETO</span></a><a data-section="#allotments"><span>LOTES</span></a><a data-section="#video"><span>VIDEO APRESENTAÇÃO</span></a><a data-section="#contact"><span>CONTATO/VENDAS</span></a><span class="button"> <span class="stripe"></span><span class="stripe"></span><span class="stripe"></span></span></div>
 </nav>
 <section id="prime-logistics">
   <h2 class="title">INFRAESTRUTURA COMPLETA <span class="br"> </span>LOTES INDUSTRIAIS A PARTIR DE <b>1000m<sup>2</sup></b></h2>
   <div data-number="1" class="banner">
     <div class="caption"> 
-      <p>Perspectiva Ilustrativa do Empreendimento</p>
+      <p>Perspectiva Ilustrativa dos Galpões</p>
     </div>
     <div class="ctrl">
       <button class="icon-left_arrow"></button>
       <button class="icon-right_arrow"></button>
     </div>
     <div class="thumbs">
-      <button data-number="1" id="thumb01" class="active"></button>
-      <button data-number="2" id="thumb02"></button>
-      <button data-number="3" id="thumb03"></button>
+      <button data-number="1" data-caption="Perspectiva Ilustrativa dos Galpões" id="thumb01" class="active"></button>
+      <button data-number="2" data-caption="Perspectiva Ilustrativa da Portaria" id="thumb02"></button>
+      <button data-number="3" data-caption="Perspectiva Ilustrativa do Refeitório" id="thumb03"></button>
     </div>
   </div>
-  <div class="strategic_location">
-    <div class="text wrap">
+</section>
+<section id="strategic-location">
+  <div class="text">
+    <div class="wrap">
       <h2>LOCALIZAÇÃO <b>ESTRATÉGICA</b></h2>
       <p>DeltaLog é um condomínio Industrial planejado para oferecer uma logística extremamente eficiente. Localizado as margens da Rodovia SP75, o condomínio permite acesso simples e rápido as principais rodovia do pais, como Castelo Branco, Bandeirantes e Anhanguera. Além de transporte rodoviário, DeltaLog está próximo ao Aeroporto Internacional de ViraCopos, e apenas 2 horas de um dos principais portos do pais. <span class="br"></span>Clique abaixo para visualizar mais detalhes sobre distâncias de cidades, aeroportos e portos. </p>
     </div>
@@ -51,13 +53,13 @@
       </figure>
     </div>
     <div class="row_02 wrap">
-      <figure data-section="#prime-logistics" data-image="highway-01.jpg" data-number="1" data-group="highway" data-caption="Fácil Acesso a SP75 - Sorocaba e São Paulo via Castelo Branco" class="figure1"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_04.png"/>
+      <figure data-section="#strategic-location" data-image="highway-01.jpg" data-number="1" data-group="highway" data-caption="Fácil Acesso a SP75 - Sorocaba e São Paulo via Castelo Branco" class="figure1"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_04.png"/>
         <figcaption>Fácil Acesso a SP75 - Sorocaba e <span class="br"></span>São Paulo via Castelo Branco</figcaption>
       </figure>
-      <figure data-section="#prime-logistics" data-image="highway-02.jpg" data-number="2" data-group="highway" data-caption="Fácil Acesso a SP75 - Campinas e São Paulo via Bandeirantes" class="figure2"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_05.png"/>
+      <figure data-section="#strategic-location" data-image="highway-02.jpg" data-number="2" data-group="highway" data-caption="Fácil Acesso a SP75 - Campinas e São Paulo via Bandeirantes" class="figure2"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_05.png"/>
         <figcaption>Fácil Acesso a SP75 - Campinas e <span class="br"></span>São Paulo via Bandeirantes</figcaption>
       </figure>
-      <figure data-section="#prime-logistics" data-image="highway-03.jpg" data-number="3" data-group="highway" data-caption="Fácil Acesso ao DeltaLog pelos dois sentidos Campinas e Sorocaba" class="figure3"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_06.png"/>
+      <figure data-section="#strategic-location" data-image="highway-03.jpg" data-number="3" data-group="highway" data-caption="Fácil Acesso ao DeltaLog pelos dois sentidos Campinas e Sorocaba" class="figure3"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_06.png"/>
         <figcaption>Fácil Acesso ao DeltaLog pelos dois <span class="br"></span>sentidos Campinas e Sorocaba</figcaption>
       </figure>
     </div>
@@ -67,17 +69,17 @@
   <div class="wrap">
     <h2>PROJETO DELTALOG</h2>
     <div class="cols col1"><span class="icon icon-shield"></span>
-      <figure data-image="infrastructure-01.jpg" data-number="1" data-group="infrastructure" data-section="#project" data-caption="Perspectiva Ilustrativa do Empreendimento" class="figure1">
+      <figure data-image="infrastructure-01.jpg" data-number="1" data-group="infrastructure" data-section="#project" data-caption="Perspectiva Ilustrativa da Portaria" class="figure1">
         <figcaption>SEGURANÇA <span class="br"></span>24H</figcaption><span class="icon-magnify"></span><img src="assets/img/project_photo_01.png" width="236" height="236"/>
       </figure>
     </div>
-    <div class="cols col2"><span class="icon icon-dish"></span>
-      <figure data-image="infrastructure-02.jpg" data-number="2" data-group="infrastructure" data-section="#project" data-caption="Perspectiva Ilustrativa do Empreendimento" class="figure2">
-        <figcaption>ALIMENTAÇÃO<span class="br">/</span>NEGÓCIOS</figcaption><span class="icon-magnify"></span><img src="assets/img/project_photo_02.png" width="236" height="236"/>
+    <div class="cols col2"><span class="icon icon-dinning_hall"></span>
+      <figure data-image="infrastructure-02.jpg" data-number="2" data-group="infrastructure" data-section="#project" data-caption="Perspectiva Ilustrativa do Refeitório" class="figure2">
+        <figcaption>ALIMENTAÇÃO<span class="br"> / </span>NEGÓCIOS</figcaption><span class="icon-magnify"></span><img src="assets/img/project_photo_02.png" width="236" height="236"/>
       </figure>
     </div>
     <div class="cols col3"><span class="icon icon-truck"></span>
-      <figure data-image="infrastructure-03.jpg" data-number="3" data-group="infrastructure" data-section="#project" data-caption="Perspectiva Ilustrativa do Empreendimento" class="figure3">
+      <figure data-image="infrastructure-03.jpg" data-number="3" data-group="infrastructure" data-section="#project" data-caption="Perspectiva Ilustrativa dos Galpões" class="figure3">
         <figcaption>MOBILIDADE</figcaption><span class="icon-magnify"></span><img src="assets/img/project_photo_03.png" width="236" height="236"/>
       </figure>
     </div>
@@ -90,9 +92,9 @@
   <div class="wrap">
     <h2 class="title">LOTES <span class="bold">PLANOS</span></h2><a role="button"><span class="icon-paper"></span><span class="text v-centered">PARA RECEBER INFORMAÇÕES COMPLETAS CLIQUE AQUI.</span></a>
     <div class="row">
-      <figure data-image="allotments-01.jpg" data-number="1" data-group="allotments" data-section="#allotments" class="figure1"><span class="icon-magnify"></span><img src="assets/img/allotments_photo_01.png" width="311" height="228"/></figure>
-      <figure data-image="allotments-02.jpg" data-number="2" data-group="allotments" data-section="#allotments" class="figure2"><span class="icon-magnify"></span><img src="assets/img/allotments_photo_02.png" width="311" height="228"/></figure>
-      <figure data-image="allotments-03.jpg" data-number="3" data-group="allotments" data-section="#allotments" class="figure3"><span class="icon-magnify"></span><img src="assets/img/allotments_photo_03.png" width="311" height="228"/></figure>
+      <figure data-image="allotments-01.jpg" data-number="1" data-group="allotments" data-section="#allotments" data-caption="Lotes planos a partir de 1.000m2" class="figure1"><span class="icon-magnify"></span><img src="assets/img/allotments_photo_01.png" width="311" height="228"/></figure>
+      <figure data-image="allotments-02.jpg" data-number="2" data-group="allotments" data-section="#allotments" data-caption="Infra-estrutura completa" class="figure2"><span class="icon-magnify"></span><img src="assets/img/allotments_photo_02.png" width="311" height="228"/></figure>
+      <figure data-image="allotments-03.jpg" data-number="3" data-group="allotments" data-section="#allotments" data-caption="Condomínio Industrial fechado" class="figure3"><span class="icon-magnify"></span><img src="assets/img/allotments_photo_03.png" width="311" height="228"/></figure>
       <div class="textbox">
         <p>DeltaLog é um condomínio industrial localizado as margens da SP75 (Rodovia Santos Dumont). Com logística privilegiada o DeltaLog oferece lotes a partir de 1000m2, planos pronto para construir. Toda a infraestrutura como ruas, esgoto e asfato já está  concluída. DeltaLog é ideal para empresas de pequeno e médio porte que se preocupam com segurança, logística e atendimento. Está localizado na cidade de Salto/SP, entre as cidades de Itu e Indaituba e a poucos quilômetros de Campinas e Sorocaba.</p>
         <p>O condomínio DeltaLog possuí projetos de galpão aprovados para construção, agilizando ainda mais o processo de implantação.</p>
@@ -100,18 +102,23 @@
     </div>
     <h2 class="subtitle"><span class="bold">MAPA </span>CONDOMÍNIO</h2>
   </div>
+  <div class="aerial_view">
+    <div class="wrap"><span data-image="infrastructure-01.jpg" data-number="1" data-group="infrastructure" data-section="#project" data-caption="Perspectiva Ilustrativa da Portaria">
+        <button title="Clique para ver perspectiva ilustrativa da portaria"></button></span><span data-image="infrastructure-02.jpg" data-number="2" data-group="infrastructure" data-section="#project" data-caption="Perspectiva Ilustrativa dos Galpões">
+        <button title="Clique para ver perspectiva ilustrativa dos galpões"></button></span><span data-image="infrastructure-03.jpg" data-number="3" data-group="infrastructure" data-section="#project" data-caption="Perspectiva Ilustrativa do Refeitório">
+        <button title="Clique para ver perspectiva ilustrativa do refeitório"></button></span></div>
+  </div>
 </section>
 <section id="video">
   <div class="wrap">
     <p><span class="bold">Lotes planos prontos para construir. </span>Investimento em segurança, logistica e atendimento.</p><img src="assets/img/logo.svg" width="266" height="37" class="logo"/>
-    <video autoplay="autoplay" poster="assets/img/poster.png" class="video">
-      <source src="assets/img/video.mp4"/>
-    </video>
+    <iframe src="https://www.youtube.com/embed/9baLPDSDnyc" frameborder="0" allowfullscreen="allowfullscreen" class="video"></iframe>
   </div>
 </section>
 <section id="contact">
-  <div class="wrap"><img src="assets/img/logo.svg" width="266" height="37" class="logo"/>
-    <form data-form="#contact_form" onsubmit="egoi(this);  return false" id="contact_form">
+  <div class="wrap">
+    <h2>Contato</h2><img src="assets/img/logo.svg" width="266" height="37" class="logo"/>
+    <form data-form="#contact_form" onsubmit="send_form(this); egoi(this);  return false" id="contact_form">
       <div class="col1">
         <div>
           <input type="text" id="name" name="name" required="required" class="text name"/>
@@ -150,27 +157,27 @@
     </div>
     <div class="col"><span class="icon-mail"></span>
       <div class="text">
-        <p>Vendas / Informações:</p>
-        <p class="bold margin">Imobiliária Mais Consultoria</p>
-        <p>vanderson@maisconsultoria.imb.br</p>
-        <p class="bold margin">Imobiliária Salto</p>
-        <p>atendimento@imobiliariasalto.com.br</p>
+        <p class="bold">Imobiliária Mais Consultoria</p><a href="mailto:vanderson@maisconsultoria.imb.br">vanderson@maisconsultoria.imb.br</a><a href="tel:1187871111">11.8787.1111 - Corretor Vanderson</a>
       </div>
     </div>
     <div class="col"><span class="icon-phone"></span>
       <div class="text">
-        <p>Contato vendas/Informações:</p>
-        <p class="bold margin">Imobiliária Mais Consultoria</p>
-        <p>11.8787.1111 - Corretor Vanderson</p>
-        <p class="bold margin">Imobiliária Salto</p>
-        <p>11.8787.2222 - Corretor Luiz</p>
+        <p class="bold">Imobiliária Matriz</p><a href="mailto:atendimento@imobiliariasalto.com.br">atendimento@imobiliariasalto.com.br</a><a href="tel:1187872222">11.8787.2222 - Corretor Luiz</a>
       </div>
     </div>
   </div>
 </footer>
+<button class="icon-top_arrow"></button>
 <div id="map-canvas" class="map"></div>
 <div class="modal background"></div>
 <div data-displayed="false" class="modal form">
+  <div class="title"> 
+    <p>Para receber mais informações sobre o empreendimento Deltalog, por favor preencha as informações abaixo.</p>
+  </div>
+  <div class="shake_title">
+    <p>Obrigado por visitar o site do condomínio Deltalog. </p>
+    <p>Caso tenha interesse em receber mais informações sobre o empreendimento sem compromisso, por favor preencha as informações abaixo.</p>
+  </div>
   <form data-form="#modal_form" onsubmit="send_form(this); egoi(this);  return false" id="modal_form">
     <div>
       <input type="text" id="name2" name="name" required="required" class="text name"/>

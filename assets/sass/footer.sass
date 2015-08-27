@@ -22,25 +22,20 @@ footer
 			line-height: 1.28rem
 			opacity: 0.54
 
-			p.margin
-				margin-top: 16px
+			a, p
+				display: inherit
+				line-height: 1.6
 
 .map
-	height: 589px
+	height: 50%
+	height: calc(100vh - 239px)
 	float: left
 	margin: 0 0 0
 	width: 100%
 	z-index: 0
 
-	&::before
-		background: linear-gradient($gray, transparent)
-		content: ''
-		height: 40px
-		position: absolute
-		width: 100%
-		z-index: 2
-
 .icon-top_arrow
+	background-color: transparent
 	cursor: pointer
 	position: fixed
 	height: 58px

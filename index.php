@@ -28,8 +28,6 @@
 <body>
     <?php require 'pages/home.php'; ?>
 
-    <div class="icon-top_arrow"></div>
-
     <!-- Js -->
     <script src='assets/js/jquery.js'></script>
     <script src='assets/js/app.js'></script>
@@ -68,7 +66,7 @@
           position: map_icon_position,
           map: map,
           title:"Deltalog",
-          icon: 'assets/img/map_logo.png',
+          icon: 'assets/img/location.png',
           animation: google.maps.Animation.DROP
       });
 
