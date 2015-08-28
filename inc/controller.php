@@ -9,17 +9,18 @@
 
     // Choosing the title and metatags
 
-    $title_ptn = 'Deltalog';
+    // $title_ptn = 'Condomínio Deltalog';
+    $title = 'Condomínio Deltalog';
 
-    switch($page) {
+    // switch($page) {
 
-        case 'home':
-            $title = 'Home | '.$title_ptn;
-            break;
+    //     case 'home':
+    //         $title = 'Home | '.$title_ptn;
+    //         break;
 
-        default:
-            $title = $title_ptn;
+    //     default:
+    //         $title = $title_ptn;
 
-    }
+    // }
 
 ?>

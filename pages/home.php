@@ -53,13 +53,16 @@
       </figure>
     </div>
     <div class="row_02 wrap">
-      <figure data-section="#strategic-location" data-image="highway-01.jpg" data-number="1" data-group="highway" data-caption="Fácil Acesso a SP75 - Sorocaba e São Paulo via Castelo Branco" class="figure1"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_04.png"/>
+      <figure data-section="#strategic-location" data-image="highway-01.jpg" data-number="1" data-group="highway" data-caption="Fácil Acesso a SP75 - Sorocaba e São Paulo via Castelo Branco" class="figure1">
+        <div class="img"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_04.png"/></div>
         <figcaption>Fácil Acesso a SP75 - Sorocaba e <span class="br"></span>São Paulo via Castelo Branco</figcaption>
       </figure>
-      <figure data-section="#strategic-location" data-image="highway-02.jpg" data-number="2" data-group="highway" data-caption="Fácil Acesso a SP75 - Campinas e São Paulo via Bandeirantes" class="figure2"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_05.png"/>
+      <figure data-section="#strategic-location" data-image="highway-02.jpg" data-number="2" data-group="highway" data-caption="Fácil Acesso a SP75 - Campinas e São Paulo via Bandeirantes" class="figure2">
+        <div class="img"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_05.png"/></div>
         <figcaption>Fácil Acesso a SP75 - Campinas e <span class="br"></span>São Paulo via Bandeirantes</figcaption>
       </figure>
-      <figure data-section="#strategic-location" data-image="highway-03.jpg" data-number="3" data-group="highway" data-caption="Fácil Acesso ao DeltaLog pelos dois sentidos Campinas e Sorocaba" class="figure3"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_06.png"/>
+      <figure data-section="#strategic-location" data-image="highway-03.jpg" data-number="3" data-group="highway" data-caption="Fácil Acesso ao DeltaLog pelos dois sentidos Campinas e Sorocaba" class="figure3">
+        <div class="img"><span class="icons icon-magnify"></span><img src="assets/img/prime_logistics_photo_06.png"/></div>
         <figcaption>Fácil Acesso ao DeltaLog pelos dois <span class="br"></span>sentidos Campinas e Sorocaba</figcaption>
       </figure>
     </div>
@@ -75,7 +78,7 @@
     </div>
     <div class="cols col2"><span class="icon icon-dinning_hall"></span>
       <figure data-image="infrastructure-02.jpg" data-number="2" data-group="infrastructure" data-section="#project" data-caption="Perspectiva Ilustrativa do Refeitório" class="figure2">
-        <figcaption>ALIMENTAÇÃO<span class="br"> / </span>NEGÓCIOS</figcaption><span class="icon-magnify"></span><img src="assets/img/project_photo_02.png" width="236" height="236"/>
+        <figcaption>REFEITÓRIO<span class="br"> / </span>TREINAMENTO</figcaption><span class="icon-magnify"></span><img src="assets/img/project_photo_02.png" width="236" height="236"/>
       </figure>
     </div>
     <div class="cols col3"><span class="icon icon-truck"></span>
@@ -147,36 +150,37 @@
 </section>
 <footer>
   <div class="wrap">
-    <div class="col"><span class="icon-location"></span>
+    <div class="real_estate matriz"><img src="assets/img/imobiliaria_matriz.png"/>
+      <div class="text"><a href="tel:1140280398">11.4028.0398 - Corretores Antonio/Angelo</a><a href="mailto:imobmatriz@terra.com.br">E-mail: imobmatriz@terra.com.br</a></div>
+    </div>
+    <div class="real_estate mais"><img src="assets/img/imobiliaria_mais.png"/>
+      <div class="text"><a href="tel:1187871111">11.8787.1111 - Corretor Vanderson</a><a href="mailto:vanderson@maisconsultoria.imb.br">vanderson@maisconsultoria.imb.br</a></div>
+    </div>
+    <div class="location">
+      <p class="title">LOCALIZAÇÃO</p><span class="icon-location"></span>
       <div class="text">
         <p class="bold">DeltaLog Investimentos Imobiliários</p>
-        <p>Rua Batalha do Tuiuti, s/nº</p>
-        <p>Bairro Lageado</p>
+        <p>Rua Batalha do Tuiuti, s/nª - Bairro Lageado</p>
         <p>Complemento: Km 42,2 / SP 75</p>
       </div>
     </div>
-    <div class="col"><span class="icon-mail"></span>
-      <div class="text">
-        <p class="bold">Imobiliária Mais Consultoria</p><a href="mailto:vanderson@maisconsultoria.imb.br">vanderson@maisconsultoria.imb.br</a><a href="tel:1187871111">11.8787.1111 - Corretor Vanderson</a>
-      </div>
-    </div>
-    <div class="col"><span class="icon-phone"></span>
-      <div class="text">
-        <p class="bold">Imobiliária Matriz</p><a href="mailto:atendimento@imobiliariasalto.com.br">atendimento@imobiliariasalto.com.br</a><a href="tel:1187872222">11.8787.2222 - Corretor Luiz</a>
-      </div>
+    <div class="footnote">
+      <p> <b>Licença de instalação de Loteamento: </b>CETESB  nº 36000028 de 13/05/2013 - <b>Inscrição imobiliária </b>nº 01.09.011.0010.001. <b>Matrícula: </b>47.262</p>
+      <p><b>Registrado no cartório de imóveis de Salto: </b>Prenotação sob nº 87.815  de 25/01/2012</p>
     </div>
   </div>
 </footer>
-<button class="icon-top_arrow"></button>
 <div id="map-canvas" class="map"></div>
+<button class="icon-top_arrow"></button>
 <div class="modal background"></div>
 <div data-displayed="false" class="modal form">
   <div class="title"> 
-    <p>Para receber mais informações sobre o empreendimento Deltalog, por favor preencha as informações abaixo.</p>
+    <p class="bold">A Deltalog liga pra você</p>
+    <p>Preencha as informações abaixo e nosso consultor entrará em contato</p>
   </div>
   <div class="shake_title">
-    <p>Obrigado por visitar o site do condomínio Deltalog. </p>
-    <p>Caso tenha interesse em receber mais informações sobre o empreendimento sem compromisso, por favor preencha as informações abaixo.</p>
+    <p class="bold">Só um minuto</p>
+    <p>Gostaria de receber mais informações sem compromisso? Preencha as informações abaixo e nosso consultor entrará em contato</p>
   </div>
   <form data-form="#modal_form" onsubmit="send_form(this); egoi(this);  return false" id="modal_form">
     <div>
@@ -210,27 +214,27 @@
 <div class="modal table">
   <ul class="cities">
     <li class="title">DISTÂNCIAS DE CIDADES</li>
-    <li><span>Campinas									</span>29km</li>
-    <li><span>Sorocaba									</span>41km</li>
-    <li><span>Jundiaí										</span>60km</li>
-    <li><span>Piracicaba									</span>99km</li>
-    <li><span>São Paulo									</span>105km</li>
-    <li><span>Santos										</span>188km</li>
+    <li><span class="text">Campinas</span><span class="value">29km</span></li>
+    <li><span class="text">Sorocaba</span><span class="value">41km</span></li>
+    <li><span class="text">Jundiaí</span><span class="value">60km</span></li>
+    <li><span class="text">Piracicaba</span><span class="value">99km</span></li>
+    <li><span class="text">São Paulo</span><span class="value">105km</span></li>
+    <li><span class="text">Santos</span><span class="value">188km</span></li>
   </ul>
   <ul class="highways">
     <li class="title">DISTÂNCIA DE RODOVIAS</li>
-    <li> <span>Rod. dos Bandeirantes (Campinas)			</span>35km</li>
-    <li> <span>Rod. Castelo Branco (Sorocaba)			</span>26km</li>
-    <li> <span>Rod. Anhanguera (Campinas)				</span>45km</li>
-    <li> <span>Rodoanel									</span>100km</li>
-    <li> <span>Marginal Tietê							</span>102km</li>
-    <li> <span>Marginal Pinheiros						</span>109km</li>
+    <li> <span class="text">Rod. dos Bandeirantes (Campinas)</span><span class="value">35km</span></li>
+    <li> <span class="text">Rod. Castelo Branco (Sorocaba)</span><span class="value">26km</span></li>
+    <li> <span class="text">Rod. Anhanguera (Campinas)</span><span class="value">45km</span></li>
+    <li> <span class="text">Rodoanel</span><span class="value">100km</span></li>
+    <li> <span class="text">Marginal Tietê</span><span class="value">102km</span></li>
+    <li> <span class="text">Marginal Pinheiros</span><span class="value">109km</span></li>
   </ul>
   <ul class="airports">
     <li class="title"> DISTÂNCIA DE PORTOS E AEROPORTOS</li>
-    <li><span>Viracopos (Campinas)						</span>27km</li>
-    <li><span>Congonhas (São Paulo)						</span>109km</li>
-    <li><span>Guarulhos									</span>126km</li>
-    <li><span>Porto de Santos								</span>192Km</li>
+    <li><span class="text">Viracopos (Campinas)</span><span class="value">27km</span></li>
+    <li><span class="text">Congonhas (São Paulo)</span><span class="value">109km</span></li>
+    <li><span class="text">Guarulhos</span><span class="value">126km</span></li>
+    <li><span class="text">Porto de Santos</span><span class="value">192Km</span></li>
   </ul>
 </div>

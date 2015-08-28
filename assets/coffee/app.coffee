@@ -212,7 +212,7 @@ do ->
 =            Magnify Images On a Modal Banner             =
 ========================================================###
 do ->
-  $('.icon-magnify, .icon-magnify + img, .aerial_view button').on 'click', ->
+  $('.icon-magnify, .icon-magnify + img, figure .img, .aerial_view button').on 'click', ->
     img                  = @parentNode.getAttribute('data-image')
     group                = @parentNode.getAttribute('data-group')
     number               = @parentNode.getAttribute('data-number')

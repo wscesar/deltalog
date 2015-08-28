@@ -12,7 +12,7 @@
     <title><?=$title?></title>
 
     <!-- Base Link -->
-    <base href='http://localhost/deltalog/'>
+    <base href='http://192.168.1.105/deltalog/'>
 
     <!-- Favicon -->
     <link rel='icon' href='assets/img/favicon.ico'>
